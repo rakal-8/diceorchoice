@@ -5,90 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Or Choice</title>
     <!-- css 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <header>
-      <nav>
-        <!-- 로고 -->
-        <h1>
-          <a href="#">
-            <img
-              src="./img/main/logo.svg"
-              width="32px"
-              height="34px"
-              alt="diceorchoice" />
-          </a>
-          Dice Or Choice
-        </h1>
-        <!-- gnb -->
-        <div class="gnb">
-          <!-- 1차 메뉴 -->
-          <!-- trpg란? -->
-          <ul>
-            <li>
-              <a href="#">
-                TRPG란?
-                <!-- 2차 메뉴 -->
-                <ul>
+      <div class="wrapper">
+        <div class="con">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <img src="./img/main/logo.svg" alt="logo" />
+            </a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="#">TRPG란?</a>
+                <ul class="submenu">
                   <li><a href="#">용어소개</a></li>
                   <li><a href="#">입문자 가이드</a></li>
-                  <li><a href="#">입문 룰 찾기</a></li>
+                  <li><a href="#">입문룰 찾기</a></li>
                 </ul>
-              </a>
-            </li>
-          </ul>
-          <!-- 룰 -->
-          <ul>
-            <li>
-              <a href="#">
-                룰
-                <!-- 2차 메뉴 -->
-                <ul>
+              </li>
+
+              <li>
+                <a href="#">룰</a>
+                <ul class="submenu">
                   <li><a href="#">국내</a></li>
                   <li><a href="#">해외</a></li>
+                  <li><a href="#">일본</a></li>
                 </ul>
-              </a>
-            </li>
-          </ul>
-          <!-- 가이드 -->
-          <ul>
-            <li>
-              <a href="#">
-                가이드
-                <!-- 2차 메뉴 -->
-                <ul>
+              </li>
+
+              <li>
+                <a href="#">가이드</a>
+                <ul class="submenu">
                   <li><a href="#">마스터링 팁</a></li>
                   <li><a href="#">플레이 팁</a></li>
                   <li><a href="#">자료실</a></li>
                 </ul>
-              </a>
-            </li>
-          </ul>
-          <!-- 커뮤니티 -->
-          <ul>
-            <li>
-              <a href="#">
-                커뮤니티
-                <!-- 2차 메뉴 -->
-                <ul>
+              </li>
+
+              <li>
+                <a href="#">커뮤니티</a>
+                <ul class="submenu">
                   <li><a href="#">다이스파티</a></li>
                   <li><a href="#">플레이 후기</a></li>
                   <li><a href="#">자유게시판</a></li>
                 </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘 -->
+          <div class="icons">
+            <a href="#">
+              <i class="xi-search"></i>
+            </a>
+            <a href="#">
+              <i class="xi-profile"></i>
+            </a>
+            <a href="#">
+              <i class="xi-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 컨텐츠 영역 -->
+    <main>
+      <!-- 메인 비주얼 -->
+      <section class="main_visual">
+        <img src="./img/main/mainvisual.jpg" alt="mainvisual" />
+      </section>
+      <!-- 퀵메뉴 -->
+      <section class="quickmenu">
+        <div class="con">
+          <ul>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./img/icon/breaking_news_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                    alt="news" />
+                </div>
+                <span>뉴스</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./img/icon/money_bag_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                    alt="punding" />
+                </div>
+                <span>이달의 펀딩</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./img/icon/map_search_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                    alt="offline_place" />
+                </div>
+                <span>오프라인 공간</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./img/icon/lightbulb_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                    alt="playtip" />
+                </div>
+                <span>플레이팁</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./img/icon/ink_pen_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                    alt="playreview" />
+                </div>
+                <span>플레이 후기</span>
               </a>
             </li>
           </ul>
         </div>
-        <!-- icon 영역 -->
-      </nav>
-    </header>
-    <!-- 메인비주얼 -->
-    <!-- sec1 -->
-    <!-- sec2 -->
-    <!-- sec3 -->
-    <!-- sec4 -->
-    <!-- footer -->
+      </section>
+      <!-- 첫번째 섹션 -->
+    </main>
   </body>
 </html>

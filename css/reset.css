@@ -3,6 +3,24 @@
    License: none (public domain)
 */
 
+/* 공통 디자인 시스템 */
+:root {
+  /* 컬러 */
+  --main-color: #6956b2;
+  --defalt-grey-color: #707070;
+  --sub-grey-color: #cbcbcb;
+  --primary-grey-color: #f0f0f0;
+  --sub-title-color: #707070;
+
+  /* 폰트 */
+  --xl-font-size: 32px;
+  --lg-font-size: 24px;
+  --md-font-size: 22px;
+  --sm-font-size: 18px;
+  --xs-font-size: 16px;
+  --xxs-font-size: 12px;
+}
+
 html,
 body,
 div,
