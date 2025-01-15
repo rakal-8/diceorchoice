@@ -190,6 +190,7 @@ section {
 .quickmenu {
   width: 100%;
   height: fit-content;
+  margin-bottom: 90px;
 }
 
 .quickmenu ul {
@@ -246,4 +247,143 @@ section {
   color: var(--main-color);
   filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
     brightness(88%) contrast(90%);
+}
+
+/* 섹션1 */
+
+h2 {
+  width: 1600px;
+  height: 67px;
+  margin: 0 auto;
+  font-size: var(--lg-font-size);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tabmenu ul.menu {
+  float: left;
+  margin-right: 10px;
+}
+
+.tabmenu .menu li {
+  width: 65px;
+  height: fit-content;
+  text-align: center;
+  color: var(--sub-grey-color);
+  font-size: var(--md-font-size);
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.tabmenu .menu li:last-child {
+  margin: 0;
+}
+
+.tabmenu .menu li.active {
+  color: var(--main-color);
+}
+
+.tabmenu div.tab {
+  width: 1525px;
+  height: 500px;
+  float: right;
+}
+
+.tabmenu > div > div {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tabmenu > div > div.active {
+  display: block;
+}
+
+.card_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con2 {
+  width: 300px;
+  height: 450px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin-left: 60px;
+  box-sizing: border-box;
+}
+
+.card_wrap > .con2:first-child {
+  margin-left: 0;
+}
+
+.con2 > h3 {
+  font-size: var(--md-font-size);
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.con2 > img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 60px;
+}
+
+.con2 > span {
+  font-size: var(--xs-font-size);
+  text-align: center;
+}
+
+.card1 {
+  position: relative;
+  animation: card1 1s ease 1 alternate forwards;
+}
+
+@keyframes card1 {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.card2 {
+  position: relative;
+  animation: card1 2s ease 1 alternate forwards;
+}
+
+@keyframes card2 {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.card3 {
+  position: relative;
+  animation: card1 3s ease 1 alternate forwards;
+}
+
+@keyframes card3 {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }

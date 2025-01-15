@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Or Choice</title>
+    <!-- js 연결 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu").menuBar();
+      });
+    </script>
+    <script src="./js/jQeury.js"></script>
     <!-- css 연결 -->
     <link
       rel="stylesheet"
@@ -143,7 +151,100 @@
         </div>
       </section>
       <!-- 첫번째 섹션 -->
-      <section></section>
+      <section>
+        <!-- 섹션 제목 -->
+        <h2>TRPG란?</h2>
+        <div class="con tabmenu">
+          <ul class="menu nav">
+            <li class="menu1 active">교육</li>
+            <li class="menu2">의료</li>
+            <li class="menu3">취미</li>
+          </ul>
+          <div class="menu tab">
+            <div class="menu1 active">
+              <div class="card_wrap">
+                <div class="con2 card1">
+                  <h3>협력</h3>
+                  <img src="./img/main/collaboration.png" alt="collabo" />
+                  <span>하나의 목표를 위해 </br> 다함께 협력 할 수 있다.</span>
+                </div>
+                <div class="con2 card2">
+                  <h3>집중</h3>
+                  <img src="./img/main/diversity3.png" alt="forcus" />
+                  <span
+                    >모두가 주인공이 되어 </br> 이야기를 이끌어나가고</br> 집중할 수
+                    있다.</span
+                  >
+                </div>
+                <div class="con2 card3">
+                  <h3>언어</h3>
+                  <img src="./img/main/teambrainstorming.png" alt="language" />
+                  <span
+                    >대화와 논의로</br> 문제와 갈등을 해결하는</br> 방법을 익힐 수
+                    있다.</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="menu2">
+              <div class="card_wrap">
+                <div class="con2 card1">
+                  <h3>안전</h3>
+                  <img src="./img/main/meditation.png" alt="safe" />
+                  <span>신체, 정신적 안전을 무엇보다<br/> 중요한 가치로 둔다.</span>
+                </div>
+                <div class="con2 card2">
+                  <h3>신뢰</h3>
+                  <img src="./img/main/teamsuccess5.png" alt="trust" />
+                  <span
+                    >게임을 하는 모두가 <br/>상대의 의견을 존중하며<br/> 제안하고 거부하지 않는다.</span
+                  >
+                </div>
+                <div class="con2 card3">
+                  <h3>포용</h3>
+                  <img src="./img/main/hiking2.png" alt="embrace" />
+                  <span
+                    >승패가 없는 게임. <br/>다양한 가치관, 경험을<br/> 포용하고
+                    이해한다.</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="menu3">
+              <div class="card_wrap">
+                <div class="con2 card1">
+                  <h3>편리</h3>
+                  <img src="./img/main/notes.png" alt="convenient" />
+                  <span
+                    >주사위와 룰북, 필기구만 있으면<br/> 언제 어디서든지 즐길 수
+                    있다.</span
+                  >
+                </div>
+                <div class="con2 card2">
+                  <h3>창작</h3>
+                  <img
+                    src="./img/main/collaboration4.png"
+                    alt="
+                  creation" />
+                  <span
+                    >자신과 팀만의 특별한<br/> 이야기를 만들고 바꾸고<br/> 즐길 수
+                    있다.</span
+                  >
+                </div>
+                <div class="con2 card3">
+                  <h3>경험</h3>
+                  <img src="./img/main/rocket Boy.png" alt="experience" />
+                  <span
+                    >새로운 인물이 되어<br/> 현실에선 불가능한 도전을<br/> 경험할 수 있다.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
