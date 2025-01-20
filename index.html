@@ -11,13 +11,13 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-      <!-- css 연결 -->
+    <!-- css 연결 -->
     <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
-    <!-- 헤더 -->
-    <header>
-      <div class="wrapper">
+    <div class="wrapper">
+      <!-- 헤더 -->
+      <header>
         <div class="con">
           <!-- 로고 -->
           <h1>
@@ -78,172 +78,552 @@
             </a>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- 컨텐츠 영역 -->
-    <main>
-      <!-- 메인 비주얼 -->
-      <section class="main_visual">
-        <img src="./img/main/mainvisual.jpg" alt="mainvisual" />
-      </section>
-      <!-- 퀵메뉴 -->
-      <section class="quickmenu">
-        <div class="con">
-          <ul>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="./img/icon/breaking_news_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
-                    alt="news" />
-                </div>
-                <span>뉴스</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="./img/icon/money_bag_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
-                    alt="punding" />
-                </div>
-                <span>이달의 펀딩</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="./img/icon/map_search_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
-                    alt="offline_place" />
-                </div>
-                <span>오프라인 공간</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="./img/icon/lightbulb_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
-                    alt="playtip" />
-                </div>
-                <span>플레이팁</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="./img/icon/ink_pen_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
-                    alt="playreview" />
-                </div>
-                <span>플레이 후기</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- 첫번째 섹션 -->
-      <section>
-        <!-- 섹션 제목 -->
-        <h2>TRPG란?</h2>
-        <div class="con tabmenu">
-          <ul class="menu nav">
-            <li class="menu1 active">교육</li>
-            <li class="menu2">의료</li>
-            <li class="menu3">취미</li>
-          </ul>
-          <div class="menu tab">
-            <div class="menu1 active">
-              <div class="card_wrap">
-                <div class="con2 card1">
-                  <h3>협력</h3>
-                  <img src="./img/main/collaboration.png" alt="collabo" />
-                  <span>하나의 목표를 위해 </br> 다함께 협력 할 수 있다.</span>
-                </div>
-                <div class="con2 card2">
-                  <h3>집중</h3>
-                  <img src="./img/main/diversity3.png" alt="forcus" />
-                  <span
-                    >모두가 주인공이 되어 </br> 이야기를 이끌어나가고</br> 집중할 수
-                    있다.</span
-                  >
-                </div>
-                <div class="con2 card3">
-                  <h3>언어</h3>
-                  <img src="./img/main/teambrainstorming.png" alt="language" />
-                  <span
-                    >대화와 논의로</br> 문제와 갈등을 해결하는</br> 방법을 익힐 수
-                    있다.</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="menu2">
-              <div class="card_wrap">
-                <div class="con2 card1">
-                  <h3>안전</h3>
-                  <img src="./img/main/meditation.png" alt="safe" />
-                  <span>신체, 정신적 안전을 무엇보다<br/> 중요한 가치로 둔다.</span>
-                </div>
-                <div class="con2 card2">
-                  <h3>신뢰</h3>
-                  <img src="./img/main/teamsuccess5.png" alt="trust" />
-                  <span
-                    >게임을 하는 모두가 <br/>상대의 의견을 존중하며<br/> 제안하고 거부하지 않는다.</span
-                  >
-                </div>
-                <div class="con2 card3">
-                  <h3>포용</h3>
-                  <img src="./img/main/hiking2.png" alt="embrace" />
-                  <span
-                    >승패가 없는 게임. <br/>다양한 가치관, 경험을<br/> 포용하고
-                    이해한다.</span
-                  >
+      </header>
+      <!-- 컨텐츠 영역 -->
+      <main>
+        <!-- 메인 비주얼 -->
+        <section class="main_visual">
+          <img src="./img/main/mainvisual.jpg" alt="mainvisual" />
+        </section>
+        <!-- 퀵메뉴 -->
+        <section class="quickmenu">
+          <div class="con">
+            <ul>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./img/icon/breaking_news_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                      alt="news" />
+                  </div>
+                  <span>뉴스</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./img/icon/money_bag_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                      alt="punding" />
+                  </div>
+                  <span>이달의 펀딩</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./img/icon/map_search_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                      alt="offline_place" />
+                  </div>
+                  <span>오프라인 공간</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./img/icon/lightbulb_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                      alt="playtip" />
+                  </div>
+                  <span>플레이팁</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./img/icon/ink_pen_24dp_707070_FILL0_wght200_GRAD0_opsz24.png"
+                      alt="playreview" />
+                  </div>
+                  <span>플레이 후기</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 첫번째 섹션 -->
+        <section class="sec1">
+          <!-- 섹션 제목 -->
+          <h2 class="sec1_title">TRPG란?</h2>
+          <div class="con tabmenu">
+            <ul class="menu nav">
+              <li class="menu1 active">교육</li>
+              <li class="menu2">의료</li>
+              <li class="menu3">취미</li>
+            </ul>
+            <div class="menu tab">
+              <div class="menu1 active">
+                <div class="card_wrap">
+                  <div class="con2 card1">
+                    <h3>협력</h3>
+                    <img src="./img/main/collaboration.png" alt="collabo" />
+                    <span
+                      >하나의 목표를 위해 <br />
+                      다함께 협력 할 수 있다.</span
+                    >
+                  </div>
+                  <div class="con2 card2">
+                    <h3>집중</h3>
+                    <img src="./img/main/diversity3.png" alt="forcus" />
+                    <span
+                      >모두가 주인공이 되어 <br />
+                      이야기를 이끌어나가고<br />
+                      집중할 수 있다.</span
+                    >
+                  </div>
+                  <div class="con2 card3">
+                    <h3>언어</h3>
+                    <img
+                      src="./img/main/teambrainstorming.png"
+                      alt="language" />
+                    <span
+                      >대화와 논의로<br />
+                      문제와 갈등을 해결하는<br />
+                      방법을 익힐 수 있다.</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="menu3">
-              <div class="card_wrap">
-                <div class="con2 card1">
-                  <h3>편리</h3>
-                  <img src="./img/main/notes.png" alt="convenient" />
-                  <span
-                    >주사위와 룰북, 필기구만 있으면<br/> 언제 어디서든지 즐길 수
-                    있다.</span
-                  >
+              <div class="menu2">
+                <div class="card_wrap">
+                  <div class="con2 card1">
+                    <h3>안전</h3>
+                    <img src="./img/main/meditation.png" alt="safe" />
+                    <span
+                      >신체, 정신적 안전을 무엇보다<br />
+                      중요한 가치로 둔다.</span
+                    >
+                  </div>
+                  <div class="con2 card2">
+                    <h3>신뢰</h3>
+                    <img src="./img/main/teamsuccess5.png" alt="trust" />
+                    <span
+                      >게임을 하는 모두가 <br />상대의 의견을 존중하며<br />
+                      제안하고 거부하지 않는다.</span
+                    >
+                  </div>
+                  <div class="con2 card3">
+                    <h3>포용</h3>
+                    <img src="./img/main/hiking2.png" alt="embrace" />
+                    <span
+                      >승패가 없는 게임. <br />다양한 가치관, 경험을<br />
+                      포용하고 이해한다.</span
+                    >
+                  </div>
                 </div>
-                <div class="con2 card2">
-                  <h3>창작</h3>
-                  <img
-                    src="./img/main/collaboration4.png"
-                    alt="
+              </div>
+
+              <div class="menu3">
+                <div class="card_wrap">
+                  <div class="con2 card1">
+                    <h3>편리</h3>
+                    <img src="./img/main/notes.png" alt="convenient" />
+                    <span
+                      >주사위와 룰북, 필기구만 있으면<br />
+                      언제 어디서든지 즐길 수 있다.</span
+                    >
+                  </div>
+                  <div class="con2 card2">
+                    <h3>창작</h3>
+                    <img
+                      src="./img/main/collaboration4.png"
+                      alt="
                   creation" />
-                  <span
-                    >자신과 팀만의 특별한<br/> 이야기를 만들고 바꾸고<br/> 즐길 수
-                    있다.</span
-                  >
-                </div>
-                <div class="con2 card3">
-                  <h3>경험</h3>
-                  <img src="./img/main/rocket Boy.png" alt="experience" />
-                  <span
-                    >새로운 인물이 되어<br/> 현실에선 불가능한 도전을<br/> 경험할 수 있다.
-                  </span>
+                    <span
+                      >자신과 팀만의 특별한<br />
+                      이야기를 만들고 바꾸고<br />
+                      즐길 수 있다.</span
+                    >
+                  </div>
+                  <div class="con2 card3">
+                    <h3>경험</h3>
+                    <img src="./img/main/rocket Boy.png" alt="experience" />
+                    <span
+                      >새로운 인물이 되어<br />
+                      현실에선 불가능한 도전을<br />
+                      경험할 수 있다.
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+        <!-- 두번째 섹션 -->
+        <section class="sec2">
+          <!-- 섹션 제목 -->
+          <div class="sec_title">
+            <h2>플레이팁</h2>
+            <p>TRPG의 세계를 모험하는 여행자를 위한 간편 안내서</p>
+          </div>
+          <div class="con tipmenu">
+            <ul class="tips">
+              <li class="tip1 active">게임마스터</li>
+              <li class="tip2">플레이어</li>
+              <li class="tip3">PC</li>
+              <li class="tip4">롤플레이</li>
+              <li class="tip5">룰북</li>
+              <li class="tip6">시트</li>
+              <li class="tip7">세션</li>
+              <li class="tip8">캠페인</li>
+              <li class="tip9">주사위</li>
+              <li class="tip10">안전도구</li>
+            </ul>
+            <div class="tip_wrap">
+              <div class="tip1 active">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>게임 마스터</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip2">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>플레이어</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip3">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>PC</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip4">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>롤플레이</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip5">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>룰북</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip6">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>시트</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip7">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>세션</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip8">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>캠페인</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip9">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>주사위</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip10">
+                <div class="tipcon">
+                  <div class="tip_txt">
+                    <h3>안전도구</h3>
+                    <p>
+                      게임의 진행과 심판 역을 담당하는 참가자를 뜻합니다.<br />
+                      TRPG 에서는 반드시 참가자 중 한 명이
+                      <span>게임마스터를</span> 담당합니다.<br />
+                      게임 마스터는 기본적으로 <span>"GM(지엠)"</span> 이라는
+                      줄임말로 부르며,<br />
+                      “MC” "KP(키퍼, 수호자)" "DM(던전마스터)" 등 다양한
+                      명칭으로도 불립니다.
+                    </p>
+                    <div class="btn_con">
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        상세 가이드 &rarr;
+                      </button>
+                      <button
+                        type="button"
+                        class="tipbtn"
+                        onClick="location.href='#'">
+                        자료실 &rarr;
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tip_img">
+                    <img src="./img/main/gm.jpg" alt="gamemaster" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 세번째 섹션 -->
+        <section class="sec3"></section>
+      </main>
+    </div>
     <!-- j쿼리 연결 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".menu").menuBar();
+        $(".tips").menuBar();
       });
     </script>
     <!-- js 연결 -->

@@ -7,11 +7,13 @@ body {
   font-size: var(--xs-font-size);
   color: #000;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .wrapper {
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 /* 공통영역 */
@@ -19,14 +21,30 @@ body {
 .con {
   width: 1600px;
   height: auto;
+  display: block;
   margin: 0 auto;
+}
+
+.sec_title {
+  width: fit-content;
+  height: fit-content;
+  font-size: var(--lg-font-size);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sec_title > p {
+  font-size: var(--xs-font-size);
+  color: var(--defalt-grey-color);
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 /* 헤더 */
 header {
   width: 100%;
   height: 74px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
@@ -34,6 +52,7 @@ header {
   right: 0;
   z-index: 999;
   transition: bacground-color 0.5s;
+  backdrop-filter: blur(20px);
 }
 
 header .con {
@@ -167,12 +186,13 @@ main,
 section {
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 /* 메인비주얼 */
 .main_visual {
   width: 100%;
-  height: 788px;
+  height: fit-content;
   position: relative;
   display: flex;
   justify-content: center;
@@ -205,7 +225,7 @@ section {
   width: fit-content;
   height: 92px;
   display: inline-block;
-  margin: 0 10px;
+  margin-left: 10px;
 }
 
 .quickmenu ul:first-of-type {
@@ -251,11 +271,17 @@ section {
 }
 
 /* 섹션1 */
+.sec1 {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  overflow: hidden;
+}
 
-h2 {
+.sec1_title {
   width: 1600px;
   height: 67px;
-  margin: 0 auto;
+  margin: 0 160px;
   font-size: var(--lg-font-size);
   font-weight: 700;
   margin-bottom: 20px;
@@ -343,6 +369,7 @@ h2 {
   text-align: center;
 }
 
+/* 애니메이션 효과-sec1 */
 .card1 {
   position: relative;
   animation: card1 1s ease 1 alternate forwards;
@@ -387,4 +414,108 @@ h2 {
   to {
     transform: translateX(0%);
   }
+}
+
+/* 두번째 섹션 */
+
+.sec2 {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+/* 팁 메뉴 */
+.tipmenu ul.tips {
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 84px;
+}
+
+.tipmenu .tips li {
+  font-size: var(--xs-font-size);
+  color: var(--sub-grey-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 팁 메뉴 클릭시 색상 변경 */
+.tipmenu .tips li.active {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* 팁 컨텐츠영역 */
+.tipmenu div.tip_wrap {
+  width: 1600px;
+  height: 484px;
+}
+
+.tip_wrap > div {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tip_wrap > div.active {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tipcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  box-sizing: border-box;
+}
+
+/* 팁 텍스트 영역 */
+.tip_txt {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.tip_txt > h3 {
+  font-size: var(--xl-font-size);
+  font-weight: 700;
+}
+
+.tip_txt > p {
+  line-height: 24px;
+  font-size: var(--sm-font-size);
+}
+
+.tip_txt > p > span {
+  color: var(--main-color);
+}
+
+/* 팁 버튼 */
+.btn_con {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 50px;
+}
+
+.btn_con > button {
+  width: 147px;
+  height: 58px;
+  border: 1px solid var(--sub-title-color);
+  border-radius: 20px;
+  background-color: #fff;
+  color: var(--sub-title-color);
+  font-size: var(--xs-font-size);
+  cursor: pointer;
+  text-align: center;
+  line-height: 58px;
 }
