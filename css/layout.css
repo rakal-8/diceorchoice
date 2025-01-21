@@ -276,6 +276,7 @@ section {
   height: fit-content;
   display: block;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .sec1_title {
@@ -416,10 +417,10 @@ section {
   }
 }
 
-/* 두번째 섹션 */
+/* 섹션2 */
 
 .sec2 {
-  width: fit-content;
+  width: 1600px;
   height: fit-content;
   display: block;
   overflow: hidden;
@@ -435,6 +436,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 84px;
+  margin-bottom: 30px;
 }
 
 .tipmenu .tips li {
@@ -469,6 +471,8 @@ section {
 }
 
 .tipcon {
+  width: fit-content;
+  height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -478,7 +482,7 @@ section {
 
 /* 팁 텍스트 영역 */
 .tip_txt {
-  width: fit-content;
+  width: 580px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -518,4 +522,149 @@ section {
   cursor: pointer;
   text-align: center;
   line-height: 58px;
+}
+
+.btn_con > button:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+/* 애니메이션 효과-sec2 */
+
+.tip_txt {
+  position: relative;
+  animation: tiptxt 1.5s ease 1 alternate forwards;
+}
+
+@keyframes tiptxt {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.btn_con {
+  position: relative;
+  animation: btncon 2.5s ease 1 alternate forwards;
+}
+
+@keyframes btncon {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.tip_img {
+  position: relative;
+  animation: tipimg 1.5s ease 1 alternate forwards;
+}
+
+@keyframes tipimg {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* 섹션3 */
+
+.sec3 {
+  width: 1600px;
+  height: fit-content;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.room_wrap {
+  width: 100%;
+  height: 506px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.room_con {
+  width: 370px;
+  height: 320px;
+}
+
+.room_con > img {
+  width: 100%;
+  height: 200px;
+}
+
+.room_txt {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tag_box {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+}
+
+.tag {
+  width: fit-content;
+  height: 28px;
+  padding: 8px;
+  text-align: center;
+  line-height: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tag > a {
+  color: var(--main-color);
+}
+
+.room_txt > h3 {
+  font-family: "inter", sans-serif;
+  font-size: var(--xs-font-size);
+}
+
+.user_nickname {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user_nickname i {
+  width: 16px;
+  height: 16px;
+}
+
+.more_btn {
+  width: 194px;
+  height: 55px;
+  position: absolute;
+  left: 800px;
+  right: 200px;
+  bottom: -30px;
+  transition: 0.3s linear;
 }
