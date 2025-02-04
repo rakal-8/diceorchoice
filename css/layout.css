@@ -417,6 +417,18 @@ section {
   }
 }
 
+.menu1 > i {
+  display: none;
+}
+
+.menu2 > i {
+  display: none;
+}
+
+.menu3 > i {
+  display: none;
+}
+
 /* 섹션2 */
 
 .sec2 {

@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* mobile */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* 공통영역 */
+
+  .con {
+    width: 90%;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  .icons > a:last-child {
+    display: block;
+    align-self: center;
+    line-height: 75px;
+  }
+
+  .sec_title {
+    width: fit-content;
+    height: fit-content;
+    font-size: var(--lg-font-size);
+    margin-left: 30px;
+    display: block;
+  }
+
+  .sec_title > p {
+    display: block;
+  }
+
+  /* 헤더 */
+  header {
+    width: 100%;
+    height: 74px;
+  }
+
+  h1 {
+    margin: 0 auto;
+  }
+
+  .icons a:nth-child(2) {
+    display: none;
+  }
+
+  .icons a:nth-child(1) {
+    display: none;
+  }
+
+  /* 메인비주얼*/
+
+  .main_visual {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  /* 퀵메뉴 */
+
+  .quickmenu ul > li {
+    margin: 0 auto;
+  }
+
+  .quickmenu ul a {
+    width: 60px;
+  }
+
+  .quickmenu ul a img {
+    width: 28px;
+    height: 28px;
+    padding: 10px;
+  }
+
+  .quickmenu ul a span {
+    width: 58px;
+    font-size: 15px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+  }
+
+  /* 섹션1 */
+  .sec1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sec1_title {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    justify-self: center;
+  }
+
+  .tabmenu ul.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabmenu .menu li:last-child {
+    margin-bottom: 30px;
+  }
+
+  /* 섹션2 */
+  .sec2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .tipmenu ul.tips {
+    display: none;
+  }
+
+  .tipmenu div.tip_wrap {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .tipcon {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .tip_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .tip_txt {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tip_txt > h3 {
+    font-size: var(--lg-font-size);
+    font-weight: 600;
+  }
+
+  .tip_txt > p {
+    width: 300px;
+    line-height: 24px;
+    font-size: var(--xs-font-size);
+    overflow-wrap: break-word;
+  }
+
+  .tip_txt > p > br {
+    display: none;
+  }
+
+  .btn_con {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+  }
+
+  .btn_con > button {
+    display: none;
+  }
+
+  /* 잠시 감추기 */
+  .sec3,
+  .sec4,
+  footer {
+    display: none;
+  }
+}
