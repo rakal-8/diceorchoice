@@ -69,6 +69,10 @@ h1 {
   align-self: center;
 }
 
+h1 > a > img:last-child {
+  display: none;
+}
+
 /* 메뉴 */
 #gnb {
   width: fit-content;
