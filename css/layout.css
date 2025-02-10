@@ -323,13 +323,15 @@ section {
   float: right;
 }
 
-.tabmenu > div > div {
+.menu01,
+.menu02,
+.menu03 {
   width: 100%;
   height: 100%;
   display: none;
 }
 
-.tabmenu > div > div.active {
+.tabmenu .menu01.active {
   display: block;
 }
 
