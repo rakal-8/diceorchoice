@@ -115,8 +115,10 @@
     width: 100%;
     height: auto;
     position: relative;
+    margin-bottom: 80px;
   }
 
+  /* 섹션 타이틀 */
   .sec1_title {
     width: fit-content;
     height: fit-content;
@@ -124,6 +126,7 @@
     justify-self: center;
   }
 
+  /* 탭 메뉴 */
   .tabmenu ul.menu {
     width: 90vw;
     height: 10vh;
@@ -140,61 +143,141 @@
     width: 95vw;
   }
 
+  /* Swiper가 포함된 슬라이드 */
+  .menu1.slide,
+  .menu2.slide,
+  .menu3.slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  /* .menu1 .swiper-container,
+  .menu2 .swiper-container,
+  .menu3 .swiper-container {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    transition: opacity 0.3s ease-in-out;
+  } */
+
+  /* 카드 랩 */
   .card_wrap {
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
   }
 
+  /* 개별 카드 */
   .con2 {
-    margin-left: 0;
+    width: 320px;
+    max-width: 320px;
+    margin: 0;
     padding: 0;
     flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.048);
   }
 
-  .con2 > h3 {
-    font-size: var(--xl-font-size);
-    margin-bottom: 30px;
+  /* Swiper 설정 */
+  .swiper-container {
+    width: 90%;
+    overflow: hidden;
   }
 
-  .con2 > img {
-    margin-bottom: 30px;
+  /* Swiper 내부 요소 */
+
+  .swiper-slide {
+    width: 70%;
+    max-width: 320px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transform: scale(1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    z-index: 1;
   }
 
-  .con2 > span {
-    font-size: 20px;
+  .swiper-slide.active {
+    transform: translateX(-50%) scale(1.1);
+    z-index: 3;
+  }
+
+  @media (max-width: 768px) {
+    .swiper-slide.left {
+      z-index: 1;
+    }
+    .swiper-slide.active {
+      z-index: 10;
+    }
+    .swiper-slide.right.card2 {
+      z-index: 7;
+    }
+    .swiper-slide.right.card3 {
+      order: 2;
+    }
+  }
+
+  .swiper-slide.left {
+    transform: translateX(-120%) scale(0.95);
+    z-index: 2;
+  }
+
+  .swiper-slide.right {
+    transform: translateX(20%) scale(0.95);
+    z-index: 1;
+  }
+
+  /* 왼쪽 카드가 중앙으로 올 때 */
+  .swiper-slide.moving-left {
+    transform: translateX(-50%) scale(0.9);
+  }
+
+  /* 오른쪽 카드가 중앙으로 올 때 */
+  .swiper-slide.moving-right {
+    transform: translateX(-50%) scale(0.9);
+  }
+
+  /* 탭이 활성화되지 않았을 때 Swiper 숨김 */
+  .menu1:not(.active) .swiper-container,
+  .menu2:not(.active) .swiper-container,
+  .menu3:not(.active) .swiper-container {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    pointer-events: none;
+  }
+
+  .swiper-slide.reset {
+    transform: translateX(-50%) scale(1);
+    z-index: 1;
+  }
+
+  .swiper-slide.reset.left {
+    transform: translateX(-120%) scale(0.95);
+    z-index: 2;
+  }
+
+  .swiper-slide.reset.right {
+    transform: translateX(20%) scale(0.95);
+    z-index: 1;
+  }
+
+  .swiper-slide.reset.active {
+    transform: translateX(-50%) scale(1);
+    z-index: 3;
   }
 
   @keyframes card1 {
-    from {
-      transform: translateX(0%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
   }
-
   @keyframes card2 {
-    from {
-      transform: translateX(0%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
   }
-
   @keyframes card3 {
-    from {
-      transform: translateX(0%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
   }
 
   /* 섹션2 */
