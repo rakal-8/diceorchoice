@@ -152,14 +152,16 @@
         <section class="sec1">
           <!-- 섹션 제목 -->
           <h2 class="sec1_title">TRPG란?</h2>
-          <div class="con tabmenu">
-            <ul class="menu nav">
-              <li class="menu1 active">교육</li>
-              <li class="menu2">의료</li>
-              <li class="menu3">취미</li>
+          <div class="con tab_menu">
+            <ul class="list">
+              <li class="is_on">
+                <a href="#tab1" class="btn">교육</a>
+              </li>
+              <li><a href="#tab2" class="btn">의료</a></li>
+              <li><a href="#tab3" class="btn">취미</a></li>
             </ul>
-            <div class="menu tab">
-              <div class="menu01 active">
+            <div class="cont_area">
+              <div id="tab1" class="cont">
                 <div class="card_wrap swiper-wrapper">
                   <div class="con2 card1 swiper-slide">
                     <h3>협력</h3>
@@ -192,7 +194,7 @@
                 </div>
               </div>
 
-              <div class="menu02">
+              <div id="tab2" class="cont">
                 <div class="card_wrap swiper-wrapper">
                   <div class="con2 card1 swiper-slide">
                     <h3>안전</h3>
@@ -221,7 +223,7 @@
                 </div>
               </div>
 
-              <div class="menu03">
+              <div id="tab3" class="cont">
                 <div class="card_wrap swiper-wrapper">
                   <div class="con2 card1 swiper-slide">
                     <h3>편리</h3>
@@ -1509,28 +1511,9 @@
         </div>
       </footer>
     </div>
-    <!-- j쿼리 연결 -->
-    <!-- 탭 메뉴 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- j쿼리 코드연결 -->
-    <!-- 탭 메뉴 -->
-    <script>
-      $(document).ready(function () {
-        $(".menu").menuBar();
-        $(".tips").menuBar();
-        $(".rules").menuBar();
-      });
-    </script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- js 파일연결 -->
-    <script src="./js/jQeury.js"></script>
     <script src="./js/javascript.js"></script>
   </body>
 </html>

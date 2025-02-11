@@ -282,6 +282,7 @@ section {
   display: block;
   overflow: hidden;
   margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .sec1_title {
@@ -292,53 +293,57 @@ section {
   margin-bottom: 20px;
 }
 
-.tabmenu ul.menu {
+.tab_menu > ul {
   float: left;
   margin-right: 10px;
+  overflow: hidden;
 }
 
-.tabmenu .menu li {
+.tab_menu li {
   width: 65px;
   height: fit-content;
   text-align: center;
-  color: var(--sub-grey-color);
-  font-size: var(--md-font-size);
-  font-weight: 700;
-  line-height: 35px;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
-.tabmenu .menu li:last-child {
+.tab_menu .list li > a {
+  color: var(--sub-grey-color);
+  font-size: var(--md-font-size);
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.tab_menu .list li:last-child {
   margin: 0;
 }
 
-.tabmenu .menu li.active {
+.tab_menu .list li.is_on .btn {
   color: var(--main-color);
 }
 
-.tabmenu div.tab {
+.cont_area {
   width: 1525px;
-  height: 500px;
+  height: 450px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
   float: right;
+  position: relative;
 }
 
-.menu01,
-.menu02,
-.menu03 {
-  width: 100%;
-  height: 100%;
-  display: none;
+.cont {
+  display: none; /* 기본적으로 모든 컨텐츠를 숨김 */
 }
 
-.tabmenu .menu01.active {
-  display: block;
+#tab1 {
+  display: block; /* 처음에는 tab1만 보이도록 설정 */
 }
 
 .card_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .con2 {
@@ -395,11 +400,12 @@ section {
 
 .card2 {
   position: relative;
-  animation: card1 2s ease 1 alternate forwards;
+  animation: card2 2s ease 1 alternate forwards;
 }
 
 @keyframes card2 {
   from {
+    opacity: 0;
     transform: translateX(100%);
   }
 
@@ -410,29 +416,18 @@ section {
 
 .card3 {
   position: relative;
-  animation: card1 3s ease 1 alternate forwards;
+  animation: card3 3s ease 1 alternate forwards;
 }
 
 @keyframes card3 {
   from {
+    opacity: 0;
     transform: translateX(100%);
   }
 
   to {
     transform: translateX(0%);
   }
-}
-
-.menu1 > i {
-  display: none;
-}
-
-.menu2 > i {
-  display: none;
-}
-
-.menu3 > i {
-  display: none;
 }
 
 /* 섹션2 */

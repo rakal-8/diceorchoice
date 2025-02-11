@@ -130,7 +130,7 @@
   }
 
   /* 탭 메뉴 */
-  .tabmenu ul.menu {
+  .tab_menu .list {
     width: 90vw;
     height: 10vh;
     display: flex;
@@ -138,7 +138,7 @@
     align-items: center;
   }
 
-  .tabmenu .menu li:last-child {
+  .tab_menu .list li:last-child {
     margin-bottom: 30px;
   }
 
@@ -146,15 +146,13 @@
     width: 95vw;
   }
 
-  .sec1 .menu {
-    position: relative;
+  .cont_area {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .menu01 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    left: 50%;
+  .con2 {
+    margin-left: 0;
   }
 
   @keyframes card1 {
@@ -334,9 +332,9 @@
 }
 
 /* 잠시 숨기기 */
-
+/* 
 .sec3,
 .sec4,
 footer {
   display: none;
-}
+} */
