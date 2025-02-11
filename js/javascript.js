@@ -33,6 +33,21 @@ for (let i = 0; i < tabList.length; i++) {
 }
 
 //섹션2 탭메뉴
+const tabBtns = document.querySelectorAll('.tips > li');
+const tabConts = document.querySelectorAll('.tip_wrap > div');
+
+tabBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(otherBtn => {
+      otherBtn.classList.remove('active');
+    });
+    tabConts.forEach(othercont => {
+      othercont.classList.remove('active');
+    });
+    tabBtns[index].classList.add('active');
+    tabConts[index].classList.add('active');
+  });
+});
 
 // 섹션1 swiper slide
 // const swiper1 = new Swiper("#tab1", {
