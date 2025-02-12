@@ -691,7 +691,7 @@ section {
   width: 194px;
   height: 55px;
   position: absolute;
-  left: 700px;
+  right: 700px;
   bottom: -30px;
   border: 1px solid var(--sub-grey-color);
   border-radius: 20px;
