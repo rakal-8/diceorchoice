@@ -174,11 +174,13 @@
     width: 100%;
     height: auto;
     justify-self: center;
+    padding: 0;
   }
 
   .tipmenu ul.tips {
     width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin-left: 15px;
     gap: 10vw;
     height: 5vh;
@@ -220,7 +222,7 @@
   .tip_txt {
     width: 100%;
     max-width: 500px;
-    min-width: 315px;
+    min-width: 280px;
     background-color: #f7f7f7;
     border: 1px solid #f7f7f7;
     border-radius: 20px;
@@ -244,7 +246,7 @@
   .tip_img > img {
     width: 100%;
     max-width: 600px;
-    min-width: 340px;
+    min-width: 280px;
   }
 
   /* ------------------------------------------- */
@@ -263,6 +265,7 @@
     min-width: 320px;
     max-width: 768px;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     flex-shrink: 0;
     padding: 0 10px;
     gap: 10px;
@@ -306,31 +309,49 @@
   .rulebook div.rule_wrap {
     width: 100%;
     height: fit-content;
+    justify-self: center;
+    padding: 0;
   }
 
   .rulebook ul.rules {
+    width: 100%;
+    display: block;
+    margin-left: 15px;
+    overflow: hidden;
     overflow-x: auto;
-    gap: 10vw;
-    height: 6vh;
+    -webkit-overflow-scrolling: touch;
+    /* height: 6vh; */
+    display: flex;
+    gap: 20px;
     justify-content: left;
   }
 
   .rules > li {
-    width: 65px;
-    height: 10px;
+    width: 80px;
+    height: auto;
     text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
   }
 
   .rule_wrap {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .rule_wrap::-webkit-scrollbar {
     width: 0;
+    height: 0;
   }
 
   .rulebook_card {
+    border: 1px solid var(--primary-grey-color);
     height: fit-content;
+  }
+
+  .rulebook_card:hover {
+    border: 1px solid var(--primary-grey-color);
+    top: 0;
   }
 
   .more_btn2 {
@@ -343,11 +364,6 @@
     font-size: var(--xs-font-size);
     font-weight: 400;
     transition: 0.5s;
-  }
-
-  .rulebook_card:hover {
-    border: none;
-    top: 0;
   }
 
   .rule_more {
@@ -373,7 +389,6 @@
   footer {
     height: fit-content;
     position: relative;
-    bottom: -650px;
     left: 0px;
   }
 
@@ -403,12 +418,20 @@
   }
 
   .search_box {
-    width: 430px;
+    width: fit-content;
     height: 50px;
   }
 
+  .search_box > input {
+    width: 100%;
+    min-width: 270px;
+    margin-top: 10px;
+    position: relative;
+  }
+
   .search_box > button {
-    top: 3px;
+    position: absolute;
+    top: 26%;
   }
 
   .search_box > i {
@@ -432,14 +455,264 @@
   .app_btn {
     position: absolute;
     bottom: -230px;
-    left: 80px;
+    left: 160px;
   }
 }
 
-/* 잠시 숨기기 */
+/* tablet -sm */
 
-footer {
-  display: none;
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  /* 공통영역 */
+  .con {
+    width: 90%;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  .icons > a:last-child {
+    display: block;
+    align-self: center;
+    line-height: 75px;
+  }
+
+  .sec_title {
+    width: fit-content;
+    height: fit-content;
+    font-size: var(--lg-font-size);
+    margin-left: 30px;
+    display: block;
+  }
+
+  .sec_title > p {
+    display: none;
+  }
+
+  /* 헤더 */
+  header {
+    position: fixed;
+    width: 100vw;
+    height: 74px;
+  }
+
+  header > .con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    width: 202vw;
+  }
+
+  h1 > a > img:first-child {
+    display: none;
+  }
+
+  h1 > a > img:last-child {
+    display: block;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+    filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
+      brightness(88%) contrast(90%);
+  }
+
+  .icons {
+    width: 8vw;
+    margin-left: auto;
+  }
+
+  .icons a:nth-child(2) {
+    display: none;
+  }
+
+  .icons a:nth-child(1) {
+    display: none;
+  }
+
+  /* 섹션 */
+  .sec1 {
+    min-width: 480px;
+    height: auto;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  /* 섹션 타이틀 */
+  .sec1_title {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    justify-self: center;
+  }
+
+  .tab_menu > ul {
+    width: 90%;
+    margin-right: 0;
+    float: none;
+    justify-self: center;
+  }
+
+  /* 탭 메뉴 */
+  .tab_menu .list {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab_menu .list li:last-child {
+    margin-bottom: 30px;
+  }
+
+  .tabmenu:last-child > div {
+    width: 95vw;
+  }
+
+  .cont_area {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .con2 {
+    margin-left: 0;
+  }
+
+  @keyframes card1 {
+  }
+  @keyframes card2 {
+  }
+  @keyframes card3 {
+  }
+
+  /* 섹션2 */
+  .sec2 {
+    width: 100%;
+    max-height: 760px;
+    overflow: hidden;
+  }
+
+  .tipmenu div.tip_wrap {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    padding: 0;
+  }
+
+  .tipmenu ul.tips {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 15px;
+    gap: 10vw;
+    height: 5vh;
+    justify-content: left;
+  }
+
+  .tipmenu ul.tips::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .tips > li {
+    height: 10px;
+    flex-shrink: 0;
+    width: fit-content;
+    text-align: left;
+  }
+
+  .tip_txt > p > br {
+    display: none;
+  }
+
+  .btn_con > button {
+    display: none;
+  }
+
+  .tip_wrap {
+    width: 100%;
+  }
+
+  .tipcon {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .tip_txt {
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+
+  .tip_txt > h3 {
+    font-size: var(--md-font-size);
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .tip_txt > p {
+    font-size: clamp(16px, 2.5vw, 1rem);
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  .tip_img > img {
+    width: 100%;
+    max-width: 600px;
+    min-width: 280px;
+  }
 }
 
-/* 미디어쿼리(여백고정 용) */
+@media screen and (min-width: 1024px) {
+  /* 공통 영역 */
+  .sec_title > p {
+    display: block;
+  }
+
+  /* sec2 */
+  .tipcon {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .tip_txt {
+    background-color: #fff;
+    border: none;
+  }
+
+  .tip_txt > h3 {
+    text-align: left;
+    margin: 10px;
+  }
+
+  .tip_txt > p {
+    margin: 0 10px;
+  }
+
+  .tip_img > img {
+    min-width: 400px;
+  }
+
+  .btn_con {
+    margin-top: 20px;
+    gap: 30px;
+  }
+
+  .btn_con > button {
+    display: block;
+  }
+}

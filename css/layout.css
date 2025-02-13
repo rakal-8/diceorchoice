@@ -469,6 +469,8 @@ section {
 .tipmenu div.tip_wrap {
   width: 1600px;
   height: 484px;
+  padding: 30px 60px;
+  box-sizing: border-box;
 }
 
 .tip_wrap > div {
@@ -490,8 +492,6 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 30px 60px;
-  box-sizing: border-box;
 }
 
 /* 팁 텍스트 영역 */

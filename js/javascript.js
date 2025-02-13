@@ -78,10 +78,22 @@ const swiper1 = new Swiper("#tab1", {
       slidesOffsetAfter: 260,
     },
 
+    480: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 310,
+      slidesOffsetAfter: -220,
+    },
+
     768: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
       slidesOffsetAfter: 270,
+    },
+
+    1024: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 270,
+      slidesOffsetAfter: 190,
     },
   },
 });
@@ -95,6 +107,12 @@ const swiper2 = new Swiper("#tab2", {
       slidesPerView: 1,
       slidesOffsetBefore: 260,
       slidesOffsetAfter: 260,
+    },
+
+    480: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 310,
+      slidesOffsetAfter: -220,
     },
 
     768: {
@@ -116,6 +134,12 @@ const swiper3 = new Swiper("#tab3", {
       slidesOffsetAfter: 260,
     },
 
+    480: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 310,
+      slidesOffsetAfter: -220,
+    },
+
     768: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
@@ -127,51 +151,38 @@ const swiper3 = new Swiper("#tab3", {
 // 섹션2 swiper slide
 // 메뉴만 슬라이드 적용.
 
-//가로 스크롤 드래그
+// 탭메뉴 영역 이벤트
+// 클릭 드래그 스크롤 이벤트
+// https://iborymagic.tistory.com/52 참고
+// https://just-joat.tistory.com/10
 
-// // 드래그 스크롤을 적용할 미디어 쿼리
-// const mediaQuery = window.matchMedia('(min-width: 320px) and (max-width: 768px)');
+// sec2 메뉴 부분
+const slider = document.querySelector(".tips");
+let isDown = false;
+let startX;
+let scrollLeft;
 
-// // 드래그 스크롤 기능을 활성화하는 함수
-// function enableDragScroll() {
-//   const container = document.getElementById('scrollContainer');
-//   let isDown = false;
-//   let startX;
-//   let scrollLeft;
+slider.addEventListener("mousedown", (e) => {
+  isDown = true;
+  slider.classList.add("scroll");
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
 
-//   container.addEventListener('mousedown', (e) => {
-//     isDown = true;
-//     startX = e.pageX - container.offsetLeft;
-//     scrollLeft = container.scrollLeft;
-//   });
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+  slider.classList.remove("scroll");
+});
 
-//   container.addEventListener('mouseleave', () => isDown = false);
-//   container.addEventListener('mouseup', () => isDown = false);
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+  slider.classList.remove("scroll");
+});
 
-//   container.addEventListener('mousemove', (e) => {
-//     if (!isDown) return;
-//     container.scrollLeft = scrollLeft - (e.pageX - container.offsetLeft - startX);
-//   });
-// }
-
-// // 미디어 쿼리 상태에 따라 드래그 스크롤을 활성화하거나 비활성화하는 함수
-// function handleMediaQueryChange(event) {
-//   const container = document.getElementById('scrollContainer');
-
-//   // 미디어 쿼리가 일치하면 드래그 스크롤 활성화
-//   if (event.matches) {
-//     enableDragScroll();
-//   } else {
-//     // 화면 크기가 조건을 벗어나면 이벤트 리스너 제거
-//     container.removeEventListener('mousedown', enableDragScroll);
-//     container.removeEventListener('mouseleave', enableDragScroll);
-//     container.removeEventListener('mouseup', enableDragScroll);
-//     container.removeEventListener('mousemove', enableDragScroll);
-//   }
-// }
-
-// // 처음 페이지 로드 시 미디어 쿼리 상태 확인
-// handleMediaQueryChange(mediaQuery);
-
-// // 미디어 쿼리가 변경될 때마다 드래그 스크롤을 활성화/비활성화
-// mediaQuery.addEventListener('change', handleMediaQueryChange);
+slider.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = x - startX;
+  slider.scrollLeft = scrollLeft - walk;
+});
