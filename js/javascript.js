@@ -90,6 +90,12 @@ const swiper1 = new Swiper("#tab1", {
       slidesOffsetAfter: 270,
     },
 
+    1023: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 270,
+      slidesOffsetAfter: 189,
+    },
+
     1024: {
       slidesPerView: "auto",
       slidesOffsetBefore: 270,
@@ -120,6 +126,18 @@ const swiper2 = new Swiper("#tab2", {
       slidesOffsetBefore: 280,
       slidesOffsetAfter: 270,
     },
+
+    1023: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 270,
+      slidesOffsetAfter: 189,
+    },
+
+    1024: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 270,
+      slidesOffsetAfter: 190,
+    },
   },
 });
 
@@ -144,6 +162,18 @@ const swiper3 = new Swiper("#tab3", {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
       slidesOffsetAfter: 270,
+    },
+
+    1023: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 270,
+      slidesOffsetAfter: 189,
+    },
+
+    1024: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 270,
+      slidesOffsetAfter: 190,
     },
   },
 });
@@ -186,3 +216,38 @@ slider.addEventListener("mousemove", (e) => {
   const walk = x - startX;
   slider.scrollLeft = scrollLeft - walk;
 });
+
+//sec3 컨텐츠 영역
+
+const slider2 = document.querySelector(".room_wrap");
+let isDown2 = false;
+let startX2;
+let scrollLeft2;
+
+slider2.addEventListener("mousedown", (e) => {
+  isDown2 = true;
+  slider2.classList.add("scroll");
+  startX2 = e.pageX - slider2.offsetLeft;
+  scrollLeft2 = slider2.scrollLeft;
+});
+
+slider2.addEventListener("mouseleave", () => {
+  isDown2 = false;
+  slider2.classList.remove("scroll");
+});
+
+slider2.addEventListener("mouseup", () => {
+  isDown2 = false;
+  slider2.classList.remove("scroll");
+});
+
+slider2.addEventListener("mousemove", (e) => {
+  if (!isDown2) return;
+  e.preventDefault();
+  const x = e.pageX - slider2.offsetLeft;
+  const walk = x - startX2;
+  slider2.scrollLeft = scrollLeft2 - walk;
+});
+
+//sec4
+// 메뉴 영역

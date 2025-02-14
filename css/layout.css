@@ -662,6 +662,7 @@ section {
   display: block;
   font-size: 12px;
   font-weight: 500;
+  justify-self: center;
   color: var(--main-color);
 }
 

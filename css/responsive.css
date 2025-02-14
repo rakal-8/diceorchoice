@@ -252,22 +252,23 @@
   /* ------------------------------------------- */
   /* 섹션3 */
   .sec3 {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
   }
 
+  .sec3 > .sec_title {
+    margin-left: 0;
+  }
+
   .room_wrap {
     width: 100%;
     height: auto;
-    min-width: 320px;
-    max-width: 768px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     flex-shrink: 0;
-    padding: 0 10px;
     gap: 10px;
     margin: 35px 0;
   }
@@ -276,10 +277,41 @@
     width: 0;
   }
 
+  .room_con {
+    width: 100%;
+    max-width: 70%;
+    min-width: 286px;
+  }
+
+  .room_txt {
+    padding: 10px 0px;
+    padding-left: 0;
+  }
+
   .room_con img {
     width: 100%;
-    max-width: 100%;
-    min-width: 320px;
+    max-width: 70%;
+    min-width: 286px;
+  }
+
+  .tag_box {
+    gap: 1vw;
+  }
+
+  .tag {
+    width: fit-content;
+    min-width: 35px;
+    max-width: 100px;
+    padding: 9px 4px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tag > a {
+    text-align: center;
+    justify-self: center;
+    font-size: clamp(12px, 1.5vw, 1rem);
   }
 
   .more_btn {
@@ -319,11 +351,15 @@
     margin-left: 15px;
     overflow: hidden;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    /* height: 6vh; */
     display: flex;
     gap: 20px;
     justify-content: left;
+  }
+
+  .rules {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
   }
 
   .rules > li {
@@ -386,76 +422,70 @@
   }
 
   /* footer */
-  footer {
-    height: fit-content;
-    position: relative;
-    left: 0px;
-  }
 
   footer > .con {
+    width: 100%;
     height: 600px;
-    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    box-sizing: border-box;
   }
 
-  .footer_nav > ul {
-    gap: 60px;
-  }
-
-  .left_wrap img {
-    position: absolute;
-    bottom: 90px;
+  .left_wrap {
+    width: 100%;
+    height: 20%;
+    display: block;
+    margin-bottom: 30px;
   }
 
   .left_wrap > p {
-    position: absolute;
-    bottom: 50px;
+    margin-top: 85px;
+  }
+
+  .footer_nav > ul {
+    display: flex;
+    text-align: left;
+    gap: 10px;
+    height: 100px;
+    margin-bottom: 300px;
+  }
+
+  .left_wrap img {
+    margin-bottom: 45px;
   }
 
   .right_wrap {
-    position: absolute;
-    top: 185px;
-    right: -25px;
+    width: 100%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    position: static;
   }
 
   .search_box {
-    width: fit-content;
-    height: 50px;
-  }
-
-  .search_box > input {
-    width: 100%;
-    min-width: 270px;
-    margin-top: 10px;
     position: relative;
+    margin-bottom: 30px;
   }
 
   .search_box > button {
-    position: absolute;
-    top: 26%;
   }
 
-  .search_box > i {
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    text-align: center;
-    line-height: 32px;
+  .app_btn {
+    position: static;
+    margin-top: 295px;
   }
 
   .footer_txt {
-    position: absolute;
-    bottom: -325px;
-    left: -65px;
+    bottom: 0;
+    padding-left: 0;
+    margin-bottom: 35px;
   }
 
   .footer_txt > p {
     text-align: left;
-  }
-
-  .app_btn {
-    position: absolute;
-    bottom: -230px;
-    left: 160px;
   }
 }
 
@@ -675,9 +705,25 @@
     max-width: 600px;
     min-width: 280px;
   }
+
+  /* sec3 */
+  .sec3 {
+    height: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .sec3 > .sec_title {
+    margin-left: 0;
+  }
+
+  /* footer */
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
   /* 공통 영역 */
   .sec_title > p {
     display: block;
@@ -687,6 +733,16 @@
   .tipcon {
     flex-direction: row;
     gap: 25px;
+  }
+
+  .tipmenu ul.tips {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 15px;
+    gap: 40px;
+    height: 5vh;
+    justify-content: left;
   }
 
   .tip_txt {
@@ -715,4 +771,169 @@
   .btn_con > button {
     display: block;
   }
+
+  /* sec3 */
+
+  .sec3 {
+    width: 95%;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sec3 > .sec_title {
+    margin-left: 0;
+  }
+
+  .room_wrap {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
+    gap: 20px;
+    margin: 35px 10px;
+  }
+
+  .room_wrap::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .room_con {
+    width: 100%;
+    max-width: 80%;
+    min-width: 286px;
+  }
+
+  .room_txt {
+    padding: 10px 0px;
+    padding-left: 0;
+  }
+
+  .room_con img {
+    width: 100%;
+    max-width: 70%;
+    min-width: 286px;
+  }
+
+  .tag_box {
+    gap: 1vw;
+  }
+
+  .tag {
+    width: fit-content;
+    min-width: 35px;
+    max-width: 100px;
+    padding: 9px 4px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tag > a {
+    text-align: center;
+    justify-self: center;
+    font-size: clamp(11px, 1vw, 1rem);
+  }
+
+  .more_btn {
+    width: 90px;
+    height: 40px;
+    border: none;
+    right: 0;
+    bottom: 0;
+    top: -10px;
+  }
+
+  .more_btn:hover {
+    bottom: 0;
+    border: none;
+  }
+
+  /* sec4 */
+  .sec4 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+    overflow: hidden;
+  }
+
+  .rulebook div.rule_wrap {
+    width: 100%;
+    height: fit-content;
+    justify-self: center;
+    padding: 0;
+  }
+
+  .rulebook ul.rules {
+    width: 100%;
+    display: block;
+    margin-left: 15px;
+    overflow: hidden;
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+  }
+
+  .rules > li {
+    width: 70px;
+    height: auto;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .rule_wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .rule_wrap::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .rulebook_card {
+    border: 1px solid var(--primary-grey-color);
+    height: fit-content;
+  }
+
+  .rulebook_card:hover {
+    border: 1px solid var(--primary-grey-color);
+    top: 0;
+  }
+
+  .more_btn2 {
+    border: none;
+    top: -10px;
+  }
+
+  .more_btn2 > a {
+    color: var(--sub-grey-color);
+    font-size: var(--xs-font-size);
+    font-weight: 400;
+    transition: 0.5s;
+  }
+
+  .rule_more {
+    display: none;
+  }
+
+  .more_btn2 > a:hover {
+    color: var(--main-color);
+  }
+
+  @keyframes book1 {
+  }
+  @keyframes book2 {
+  }
+  @keyframes book3 {
+  }
+  @keyframes book4 {
+  }
+  @keyframes book5 {
+  }
+
+  /* footer */
 }
