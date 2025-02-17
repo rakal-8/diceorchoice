@@ -75,19 +75,19 @@ const swiper1 = new Swiper("#tab1", {
     320: {
       slidesPerView: 1,
       slidesOffsetBefore: 260,
-      slidesOffsetAfter: 260,
+      slidesOffsetAfter: -260,
     },
 
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -220,
+      slidesOffsetAfter: -140,
     },
 
     768: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
-      slidesOffsetAfter: 270,
+      slidesOffsetAfter: -40,
     },
 
     1023: {
@@ -112,19 +112,19 @@ const swiper2 = new Swiper("#tab2", {
     320: {
       slidesPerView: 1,
       slidesOffsetBefore: 260,
-      slidesOffsetAfter: 260,
+      slidesOffsetAfter: -260,
     },
 
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -220,
+      slidesOffsetAfter: -140,
     },
 
     768: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
-      slidesOffsetAfter: 270,
+      slidesOffsetAfter: -40,
     },
 
     1023: {
@@ -149,19 +149,19 @@ const swiper3 = new Swiper("#tab3", {
     320: {
       slidesPerView: 1,
       slidesOffsetBefore: 260,
-      slidesOffsetAfter: 260,
+      slidesOffsetAfter: -260,
     },
 
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -220,
+      slidesOffsetAfter: -140,
     },
 
     768: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
-      slidesOffsetAfter: 270,
+      slidesOffsetAfter: -40,
     },
 
     1023: {
@@ -251,3 +251,63 @@ slider2.addEventListener("mousemove", (e) => {
 
 //sec4
 // 메뉴 영역
+const slider3 = document.querySelector(".rules");
+let isDown3 = false;
+let startX3;
+let scrollLeft3;
+
+slider3.addEventListener("mousedown", (e) => {
+  isDown3 = true;
+  slider3.classList.add("swap");
+  startX3 = e.pageX - slider3.offsetLeft;
+  scrollLeft3 = slider3.scrollLeft;
+});
+
+slider3.addEventListener("mouseleave", () => {
+  isDown3 = false;
+  slider3.classList.remove("swap");
+});
+
+slider3.addEventListener("mouseup", () => {
+  isDown3 = false;
+  slider3.classList.remove("swap");
+});
+
+slider3.addEventListener("mousemove", (e) => {
+  if (!isDown3) return;
+  e.preventDefault();
+  const x = e.pageX - slider3.offsetLeft;
+  const walk = x - startX3;
+  slider3.scrollLeft = scrollLeft3 - walk;
+});
+
+//컨텐츠 영역
+const slider4 = document.querySelector(".rule_wrap");
+let isDown4 = false;
+let startX4;
+let scrollLeft4;
+
+slider4.addEventListener("mousedown", (e) => {
+  isDown4 = true;
+  slider4.classList.add("swap");
+  startX4 = e.pageX - slider4.offsetLeft;
+  scrollLeft4 = slider4.scrollLeft;
+});
+
+slider4.addEventListener("mouseleave", () => {
+  isDown4 = false;
+  slider4.classList.remove("swap");
+});
+
+slider4.addEventListener("mouseup", () => {
+  isDown4 = false;
+  slider4.classList.remove("swap");
+});
+
+slider4.addEventListener("mousemove", (e) => {
+  if (!isDown4) return;
+  e.preventDefault();
+  const x = e.pageX - slider4.offsetLeft;
+  const walk = x - startX4;
+  slider4.scrollLeft = scrollLeft4 - walk;
+});

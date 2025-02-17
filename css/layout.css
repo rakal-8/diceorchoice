@@ -980,16 +980,16 @@ section {
 footer {
   width: 100%;
   height: fit-content;
+  padding-bottom: 20px;
   background-color: var(--main-color);
 }
 
 footer > .con {
-  width: 1600px;
+  width: 95%;
   padding-top: 60px;
   box-sizing: border-box;
   display: flex;
   overflow: hidden;
-  position: relative;
 }
 
 .left_wrap {
@@ -1027,6 +1027,12 @@ footer > .con {
   font-weight: 400;
 }
 
+.left_wrap > a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
 .left_wrap img {
   width: 56px;
   height: 59px;
@@ -1044,20 +1050,16 @@ footer > .con {
 }
 
 .right_wrap {
-  width: 100%;
+  width: 50%;
   display: block;
-  margin-left: auto;
-  justify-content: right-end;
-  align-items: center;
-  position: absolute;
-  right: -1290px;
 }
 
 .search_box {
   width: 300px;
   height: 40px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 155px;
+  margin-left: auto;
 }
 
 .search_box > input {
@@ -1091,11 +1093,7 @@ footer > .con {
 
 .footer_txt {
   width: fit-content;
-  height: fit-content;
-  padding-left: 70px;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: -200px;
+  margin-left: auto;
 }
 
 .footer_txt > p {
@@ -1104,12 +1102,11 @@ footer > .con {
 }
 
 .app_btn {
-  width: 100%;
   display: flex;
+  width: fit-content;
   gap: 8px;
-  margin-top: 130px;
-  position: absolute;
-  right: -174px;
+  margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .app_btn img {
