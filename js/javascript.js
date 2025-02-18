@@ -81,25 +81,33 @@ const swiper1 = new Swiper("#tab1", {
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -140,
+      slidesOffsetAfter: -210,
     },
 
-    768: {
+    641: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
       slidesOffsetAfter: -40,
     },
 
-    1023: {
+    768: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 270,
-      slidesOffsetAfter: 189,
+      slidesOffsetBefore: 280,
+      slidesOffsetAfter: 10,
     },
 
     1024: {
       slidesPerView: "auto",
       slidesOffsetBefore: 270,
-      slidesOffsetAfter: 190,
+      slidesOffsetAfter: 210,
+    },
+
+    1249: {
+      slidesPerView: 0,
+      slidesOffsetBefore: -46,
+      slidesOffsetAfter: 0,
+      resistance: false,
+      allowTouchMove: false,
     },
   },
 });
@@ -118,25 +126,33 @@ const swiper2 = new Swiper("#tab2", {
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -140,
+      slidesOffsetAfter: -210,
     },
 
-    768: {
+    641: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
       slidesOffsetAfter: -40,
     },
 
-    1023: {
+    768: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 270,
-      slidesOffsetAfter: 189,
+      slidesOffsetBefore: 280,
+      slidesOffsetAfter: 10,
     },
 
     1024: {
       slidesPerView: "auto",
       slidesOffsetBefore: 270,
-      slidesOffsetAfter: 190,
+      slidesOffsetAfter: 210,
+    },
+
+    1249: {
+      slidesPerView: 0,
+      slidesOffsetBefore: -46,
+      slidesOffsetAfter: 0,
+      resistance: false,
+      allowTouchMove: false,
     },
   },
 });
@@ -155,25 +171,33 @@ const swiper3 = new Swiper("#tab3", {
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -140,
+      slidesOffsetAfter: -210,
     },
 
-    768: {
+    641: {
       slidesPerView: "auto",
       slidesOffsetBefore: 280,
       slidesOffsetAfter: -40,
     },
 
-    1023: {
+    768: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 270,
-      slidesOffsetAfter: 189,
+      slidesOffsetBefore: 280,
+      slidesOffsetAfter: 10,
     },
 
     1024: {
       slidesPerView: "auto",
       slidesOffsetBefore: 270,
-      slidesOffsetAfter: 190,
+      slidesOffsetAfter: 210,
+    },
+
+    1249: {
+      slidesPerView: 0,
+      slidesOffsetBefore: -46,
+      slidesOffsetAfter: 0,
+      resistance: false,
+      allowTouchMove: false,
     },
   },
 });

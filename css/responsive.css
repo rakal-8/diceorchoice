@@ -13,12 +13,6 @@
     display: none;
   }
 
-  .icons > a:last-child {
-    display: block;
-    align-self: center;
-    line-height: 75px;
-  }
-
   .sec_title {
     width: fit-content;
     height: fit-content;
@@ -62,6 +56,7 @@
     align-self: center;
     filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
       brightness(88%) contrast(90%);
+    margin-left: 15px;
   }
 
   .icons {
@@ -75,6 +70,12 @@
 
   .icons a:nth-child(1) {
     display: none;
+  }
+
+  .icons > a:last-child {
+    display: block;
+    align-self: center;
+    line-height: 75px;
   }
 
   /* ------------------------------------------ */
@@ -307,6 +308,22 @@
     font-size: clamp(12px, 1.5vw, 1rem);
   }
 
+  .user_nickname {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .user_nickname img {
+    display: none;
+  }
+
+  .user_nickname > p {
+    justify-self: left;
+  }
+
   .more_btn {
     width: 90px;
     height: 40px;
@@ -482,16 +499,6 @@
     width: 90%;
   }
 
-  #gnb {
-    display: none;
-  }
-
-  .icons > a:last-child {
-    display: block;
-    align-self: center;
-    line-height: 75px;
-  }
-
   .sec_title {
     width: fit-content;
     height: fit-content;
@@ -644,10 +651,6 @@
     display: none;
   }
 
-  .tip_wrap {
-    width: 100%;
-  }
-
   .tipcon {
     width: 100%;
     height: auto;
@@ -732,17 +735,7 @@
 
 @media screen and (min-width: 641px) and (max-width: 1250px) {
   .con {
-    width: 90%;
-  }
-
-  #gnb {
-    display: none;
-  }
-
-  .icons > a:last-child {
-    display: block;
-    align-self: center;
-    line-height: 75px;
+    width: 95%;
   }
 
   .sec_title {
@@ -771,7 +764,6 @@
     height: fit-content;
     display: block;
     justify-self: center;
-    margin-left: 30px;
   }
 
   /* 탭 메뉴 */
@@ -791,16 +783,106 @@
     width: 90%;
     margin: 0 auto;
   }
-}
-
-@media screen and (min-width: 1023px) {
-  /* 공통 영역 */
-  /* .sec_title > p {
-    display: block;
-  } */
 
   /* sec2 */
-  /* .tipcon {
+
+  .tipmenu ul.tips {
+    gap: 8vw;
+  }
+
+  /* sec3 */
+
+  .room_con {
+    width: 100%;
+    max-width: 70%;
+    min-width: 280px;
+  }
+
+  .room_con img {
+    width: 100%;
+    max-width: 70%;
+    min-width: 280px;
+  }
+
+  /* sec4 */
+  .more_btn2 {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* 공통 영역 */
+
+  .sec_title > p {
+    display: block;
+  }
+
+  /* 헤더 */
+  header {
+    position: fixed;
+    width: 98vw;
+    height: 74px;
+  }
+
+  header > .con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    width: 202vw;
+  }
+
+  h1 > a > img:first-child {
+    display: none;
+  }
+
+  h1 > a > img:last-child {
+    display: block;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+    filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
+      brightness(88%) contrast(90%);
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  .icons {
+    width: 8vw;
+    margin-left: auto;
+  }
+
+  .icons > a:last-child {
+    display: block;
+  }
+
+  .icons a:nth-child(2) {
+    display: none;
+  }
+
+  .icons a:nth-child(1) {
+    display: none;
+  }
+
+  /* sec1 */
+  .tab_menu .list {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    box-sizing: border-box;
+  }
+
+  /* sec2 */
+  .tipcon {
     flex-direction: row;
     gap: 25px;
   }
@@ -810,41 +892,14 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin-left: 15px;
-    gap: 40px;
+    gap: 55px;
     height: 5vh;
     justify-content: left;
   }
 
-  .tip_txt {
-    background-color: #fff;
-    border: none;
-  }
-
-  .tip_txt > h3 {
-    text-align: left;
-    margin: 10px;
-  }
-
-  .tip_txt > p {
-    margin: 0 10px;
-  }
-
-  .tip_img > img {
-    min-width: 400px;
-  }
-
-  .btn_con {
-    margin-top: 20px;
-    gap: 30px;
-  }
-
-  .btn_con > button {
-    display: block;
-  } */
-
   /* sec3 */
 
-  /* .sec3 {
+  .sec3 {
     width: 95%;
     height: auto;
     margin-bottom: 30px;
@@ -919,10 +974,10 @@
   .more_btn:hover {
     bottom: 0;
     border: none;
-  } */
+  }
 
   /* sec4 */
-  /* .sec4 {
+  .sec4 {
     width: 100%;
     height: auto;
     margin-bottom: 90px;
@@ -977,6 +1032,7 @@
   .more_btn2 {
     border: none;
     top: -10px;
+    margin-right: 20px;
   }
 
   .more_btn2 > a {
@@ -1003,10 +1059,10 @@
   @keyframes book4 {
   }
   @keyframes book5 {
-  } */
+  }
 
   /* footer */
-  /* footer > .con {
+  footer > .con {
     width: 95%;
   }
 
@@ -1034,7 +1090,130 @@
     width: fit-content;
     margin-left: auto;
     margin-top: 170px;
-  } */
+  }
+}
+
+@media screen and (min-width: 1249px) {
+  /* 헤더 */
+
+  header .con {
+    width: 95%;
+    gap: 165px;
+    justify-content: inherit;
+  }
+
+  h1 {
+    width: fit-content;
+    display: block;
+  }
+
+  h1 > a > img:first-child {
+    width: 100%;
+    height: 35px;
+    display: block;
+  }
+
+  h1 > a > img:last-child {
+    display: none;
+  }
+
+  #gnb {
+    display: block;
+  }
+
+  #gnb > ul {
+    gap: 70px;
+  }
+
+  .icons > a:last-child {
+    display: none;
+  }
+
+  .icons a:nth-child(2) {
+    display: block;
+  }
+
+  .icons a:nth-child(1) {
+    display: block;
+  }
+
+  /* sec1 */
+
+  .sec1_title {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    justify-self: center;
+  }
+
+  /* sec1 */
+  .tab_menu .list {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+
+  /* sec2 */
+
+  .tipmenu div.tip_wrap {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .tip_img > img {
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+  }
+
+  /* sec3 */
+  .sec3 {
+    width: 95%;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .room_wrap {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    gap: 0px;
+    margin: 35px 10px;
+  }
+
+  .tag_box {
+    display: flex;
+    gap: 5px;
+  }
+
+  .tag {
+    width: fit-content;
+    min-width: 35px;
+    max-width: 100px;
+    padding: 9px 4px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user_nickname > a > img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* sec4 */
+  .more_btn2 {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1440px) {

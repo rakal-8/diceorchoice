@@ -168,18 +168,24 @@ header:hover {
 }
 
 .icons > a {
-  width: 48px;
-  height: 74px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  line-height: 2;
-  transition: 0.5s;
+  transition: 0.3s;
+}
+
+.icons img {
+  width: 100%;
+  height: auto;
+  align-self: center;
 }
 
 .icons > a:hover {
   color: var(--main-color);
+  filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
+    brightness(88%) contrast(90%);
 }
 
 .icons > a:last-child {
@@ -679,7 +685,12 @@ section {
   gap: 8px;
 }
 
-.user_nickname i {
+.user_nickname > a {
+  width: 16px;
+  height: 16px;
+}
+
+.user_nickname > a > img {
   width: 16px;
   height: 16px;
 }
