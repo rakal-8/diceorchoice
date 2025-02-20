@@ -32,6 +32,9 @@ for (let i = 0; i < tabList.length; i++) {
   });
 }
 
+//섹션1 탭메뉴 - 코드가 작동되지 않음. 수정.
+// ? 리스폰시브 적용하니까 작동함.
+
 //섹션2 탭메뉴 - 위의 코드가 적용되지 않아, 다시 만듦.
 const tabBtns = document.querySelectorAll(".tips > li");
 const tabConts = document.querySelectorAll(".tip_wrap > div");

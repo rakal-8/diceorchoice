@@ -6,7 +6,7 @@
   /* 공통영역 */
 
   .con {
-    width: 90%;
+    width: 95%;
   }
 
   #gnb {
@@ -27,55 +27,37 @@
 
   /* ------------------------------------------ */
   /* 헤더 */
-  header {
-    position: fixed;
-    width: 100vw;
-    height: 74px;
-  }
-
-  header > .con {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
+  /* 로고 */
 
   h1 {
-    width: 202vw;
+    width: fit-content;
+    margin: 0 auto;
   }
 
-  h1 > a > img:first-child {
+  h1 > a > img {
     display: none;
   }
 
   h1 > a > img:last-child {
     display: block;
-    width: 40px;
+    width: fit-content;
     height: 40px;
-    justify-self: center;
-    align-self: center;
     filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
       brightness(88%) contrast(90%);
-    margin-left: 15px;
   }
 
-  .icons {
-    width: 8vw;
-    margin-left: auto;
-  }
-
-  .icons a:nth-child(2) {
+  /* 메뉴 */
+  #gnb {
     display: none;
   }
 
-  .icons a:nth-child(1) {
+  /* 아이콘 */
+  .icons > a {
     display: none;
   }
 
   .icons > a:last-child {
     display: block;
-    align-self: center;
-    line-height: 75px;
   }
 
   /* ------------------------------------------ */
@@ -496,7 +478,7 @@
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   /* 공통영역 */
   .con {
-    width: 90%;
+    width: 95%;
   }
 
   .sec_title {
@@ -508,51 +490,6 @@
   }
 
   .sec_title > p {
-    display: none;
-  }
-
-  /* 헤더 */
-  header {
-    position: fixed;
-    width: 100vw;
-    height: 74px;
-  }
-
-  header > .con {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  h1 {
-    width: 202vw;
-  }
-
-  h1 > a > img:first-child {
-    display: none;
-  }
-
-  h1 > a > img:last-child {
-    display: block;
-    width: 40px;
-    height: 40px;
-    justify-self: center;
-    align-self: center;
-    filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
-      brightness(88%) contrast(90%);
-  }
-
-  .icons {
-    width: 8vw;
-    margin-left: auto;
-  }
-
-  .icons a:nth-child(2) {
-    display: none;
-  }
-
-  .icons a:nth-child(1) {
     display: none;
   }
 
@@ -750,6 +687,14 @@
     display: none;
   }
 
+  header {
+    width: 100%;
+  }
+
+  #gnb > ul > li {
+    width: fit-content;
+  }
+
   /* 섹션1 */
 
   .sec1 {
@@ -817,59 +762,6 @@
     display: block;
   }
 
-  /* 헤더 */
-  header {
-    position: fixed;
-    width: 98vw;
-    height: 74px;
-  }
-
-  header > .con {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  h1 {
-    width: 202vw;
-  }
-
-  h1 > a > img:first-child {
-    display: none;
-  }
-
-  h1 > a > img:last-child {
-    display: block;
-    width: 40px;
-    height: 40px;
-    justify-self: center;
-    align-self: center;
-    filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
-      brightness(88%) contrast(90%);
-  }
-
-  #gnb {
-    display: none;
-  }
-
-  .icons {
-    width: 8vw;
-    margin-left: auto;
-  }
-
-  .icons > a:last-child {
-    display: block;
-  }
-
-  .icons a:nth-child(2) {
-    display: none;
-  }
-
-  .icons a:nth-child(1) {
-    display: none;
-  }
-
   /* sec1 */
   .tab_menu .list {
     width: 90vw;
@@ -906,10 +798,6 @@
     position: relative;
     overflow: hidden;
   }
-
-  /* .sec3 > .sec_title {
-    margin-left: 0;
-  } */
 
   .room_wrap {
     width: 100%;
@@ -1093,29 +981,19 @@
   }
 }
 
-@media screen and (min-width: 1249px) {
+@media screen and (min-width: 1249px) and (max-width: 1439px) {
   /* 공통영역 */
   .con {
     width: 95%;
   }
 
   /* 헤더 */
-
-  header .con {
-    width: 95%;
-    gap: 165px;
-    justify-content: inherit;
+  header {
+    width: 1250px;
   }
 
   h1 {
-    width: fit-content;
-    display: block;
-  }
-
-  h1 > a > img:first-child {
-    width: 100%;
-    height: 35px;
-    display: block;
+    width: 130px;
   }
 
   h1 > a > img:last-child {
@@ -1124,22 +1002,11 @@
 
   #gnb {
     display: block;
+    width: fit-content;
   }
 
-  #gnb > ul {
-    gap: 70px;
-  }
-
-  .icons > a:last-child {
-    display: none;
-  }
-
-  .icons a:nth-child(2) {
-    display: block;
-  }
-
-  .icons a:nth-child(1) {
-    display: block;
+  #gnb > ul > li {
+    width: fit-content;
   }
 
   /* sec1 */
@@ -1245,7 +1112,7 @@
 
   /* 헤더 */
 
-  h1 {
+  /* h1 {
     width: 130px;
     height: 30px;
     align-self: center;
@@ -1267,6 +1134,10 @@
   #gnb > ul {
     gap: 80px;
   }
+
+  #gnb > ul > li {
+    position: relative;
+  } */
 
   /* sec1 */
   .sec1 {
@@ -1457,7 +1328,7 @@
 }
 
 @media screen and (min-width: 1600px) {
-  /* 공통 영역 */
+  /* 공통 영역
   .con {
     height: auto;
     display: block;
@@ -1466,22 +1337,64 @@
   }
 
   .sec_title {
-    width: 100%;
+    width: 1600px;
     margin: 0 auto;
+    padding-left: 30px;
+    box-sizing: border-box;
   }
+
+  /* 헤더 */
+  /* header {
+    width: 100%;
+  }
+
+  header .con {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    width: 130px; 
+    height: 30px;
+    align-self: center;
+  } */
 
   /* sec1 */
 
-  .sec1_title {
-    width: 100%;
+  /* .sec1_title {
+    width: 1600px;
+    padding-left: 30px;
+    box-sizing: border-box;
   }
 
   .tab_menu .list {
-    width: 170px;
+    width: fit-content;
     justify-content: center;
-  }
+    margin-left: 0;
+  } */
 
   /* sec3 */
+
+  /* .sec3 {
+    width: 1600px;
+    height: fit-content;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+
+  .sec3 .sec_title {
+    padding-left: 0;
+  }
+
+  .room_wrap {
+    width: 100%;
+    height: 506px;
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+  }
+
   .room_con {
     width: 350px;
   }
@@ -1502,10 +1415,146 @@
     gap: 8px;
   }
 
-  /* 잠시 숨기기 */
+  .more_btn {
+    width: 194px;
+    height: 55px;
+    position: absolute;
+    right: 700px;
+    top: 450px;
+    border: 1px solid var(--sub-grey-color);
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+  } */
 
-  .sec4,
-  footer {
-    display: none;
+  /* hover 효과 -sec3 */
+
+  /* .more_btn:hover {
+    top: 455px;
+    border: 1px solid var(--main-color);
   }
+
+  .more_btn:hover a {
+    color: var(--main-color);
+    top: 455px;
+  } */
+
+  /* sec4 */
+  /* .more_btn2 {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+  }
+
+  .more_btn2 > a {
+    display: block;
+    font-family: "inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    color: var(--main-color);
+  }
+
+  .rule_more {
+    display: block;
+  }
+
+  .rule_more > a {
+    display: block;
+  }
+
+  .rulebook_card:hover {
+    border: 1px solid var(--main-color);
+    top: -10px;
+  }
+
+  .rulebook_card .rule_more:hover {
+    border: 1px solid var(--main-color);
+  }
+
+  .rulebook_card .rule_more:hover > a {
+    color: var(--main-color);
+  }
+
+  .book1 {
+    position: relative;
+    animation: book1 1s ease 1 alternate forwards;
+  }
+
+  @keyframes book1 {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .book2 {
+    position: relative;
+    animation: book2 1.5s ease 1 alternate forwards;
+  }
+
+  @keyframes book2 {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .book3 {
+    position: relative;
+    animation: book3 2s ease 1 alternate forwards;
+  }
+
+  @keyframes book3 {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .book4 {
+    position: relative;
+    animation: book4 2.5s ease 1 alternate forwards;
+  }
+
+  @keyframes book4 {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .book5 {
+    position: relative;
+    animation: book5 3s ease 1 alternate forwards;
+  }
+
+  @keyframes book5 {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    } 
+  } */
 }
