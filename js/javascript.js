@@ -105,7 +105,7 @@ const swiper1 = new Swiper("#tab1", {
       slidesOffsetAfter: 210,
     },
 
-    1249: {
+    1250: {
       slidesPerView: 0,
       slidesOffsetBefore: -46,
       slidesOffsetAfter: 0,
@@ -150,7 +150,7 @@ const swiper2 = new Swiper("#tab2", {
       slidesOffsetAfter: 210,
     },
 
-    1249: {
+    1250: {
       slidesPerView: 0,
       slidesOffsetBefore: -46,
       slidesOffsetAfter: 0,
@@ -195,7 +195,7 @@ const swiper3 = new Swiper("#tab3", {
       slidesOffsetAfter: 210,
     },
 
-    1249: {
+    1250: {
       slidesPerView: 0,
       slidesOffsetBefore: -46,
       slidesOffsetAfter: 0,

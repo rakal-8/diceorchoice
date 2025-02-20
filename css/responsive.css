@@ -1,1560 +1,402 @@
 @charset "utf-8";
 
-/* mobile */
+/* pc */
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   /* 공통영역 */
 
-  .con {
-    width: 95%;
+  main,
+  section {
+    width: 1600px;
+    overflow: hidden;
   }
 
-  #gnb {
-    display: none;
+  .con {
+    width: 1600px;
   }
 
   .sec_title {
-    width: fit-content;
-    height: fit-content;
-    font-size: var(--lg-font-size);
-    margin-left: 30px;
-    display: block;
+    width: 1600px;
+    margin: 0 auto;
+    padding-left: 30px;
+    box-sizing: border-box;
   }
 
-  .sec_title > p {
-    display: none;
+  .sec1_title {
+    width: 1600px;
+    margin: 0 auto;
+    padding-left: 30px;
+    box-sizing: border-box;
   }
 
-  /* ------------------------------------------ */
   /* 헤더 */
-  /* 로고 */
-
-  h1 {
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  h1 > a > img {
-    display: none;
-  }
-
-  h1 > a > img:last-child {
-    display: block;
-    width: fit-content;
-    height: 40px;
-    filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
-      brightness(88%) contrast(90%);
-  }
-
-  /* 메뉴 */
-  #gnb {
-    display: none;
-  }
-
-  /* 아이콘 */
-  .icons > a {
-    display: none;
-  }
-
-  .icons > a:last-child {
-    display: block;
-  }
-
-  /* ------------------------------------------ */
-  /* 메인비주얼*/
-
-  .main_visual {
-    width: 100vw;
-    height: fit-content;
-    margin-bottom: 20px;
-  }
-
-  /* 퀵메뉴 */
-
-  .quickmenu ul > li {
-    margin: 0 auto;
-  }
-
-  .quickmenu ul a {
-    width: 60px;
-  }
-
-  .quickmenu ul a img {
-    width: 28px;
-    height: 28px;
-    padding: 10px;
-  }
-
-  .quickmenu ul a span {
-    width: 58px;
-    font-size: 15px;
-    font-weight: 400;
-    overflow-wrap: break-word;
-  }
-
-  /* ------------------------------------------ */
-  /* 섹션1 */
-  .sec1 {
-    min-width: 320px;
-    height: auto;
-    position: relative;
-    margin-bottom: 80px;
-  }
-
-  /* 섹션 타이틀 */
-  .sec1_title {
-    width: fit-content;
-    height: fit-content;
-    display: block;
-    justify-self: center;
-  }
-
-  /* 탭 메뉴 */
-  .tab_menu .list {
-    width: 90vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tab_menu .list li:last-child {
-    margin-bottom: 30px;
-  }
-
-  .cont_area {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .con2 {
-    margin-left: 0;
-  }
-
-  @keyframes card1 {
-  }
-  @keyframes card2 {
-  }
-  @keyframes card3 {
-  }
-
-  /* ------------------------------------------- */
-  /* 섹션2 */
-  .sec2 {
-    width: 100%;
-    max-height: 760px;
-    overflow: hidden;
-  }
-
-  .tipmenu div.tip_wrap {
-    width: 100%;
-    height: auto;
-    justify-self: center;
-    padding: 0;
-  }
-
-  .tipmenu ul.tips {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-left: 15px;
-    gap: 10vw;
-    height: 5vh;
-    justify-content: left;
-  }
-
-  .tipmenu ul.tips::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  .tips > li {
-    height: 10px;
-    flex-shrink: 0;
-    width: fit-content;
-    text-align: left;
-  }
-
-  .tip_txt > p > br {
-    display: none;
-  }
-
-  .btn_con > button {
-    display: none;
-  }
-
-  .tip_wrap {
-    width: 100%;
-  }
-
-  .tipcon {
-    width: 100%;
-    height: auto;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-  }
-
-  .tip_txt {
-    width: 100%;
-    max-width: 500px;
-    min-width: 280px;
-    background-color: #f7f7f7;
-    border: 1px solid #f7f7f7;
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-  }
-
-  .tip_txt > h3 {
-    font-size: var(--md-font-size);
-    text-align: center;
-    margin-top: 8px;
-  }
-
-  .tip_txt > p {
-    font-size: clamp(14px, 2.5vw, 1rem);
-    word-wrap: break-word;
-    text-align: left;
-  }
-
-  .tip_img > img {
-    width: 100%;
-    max-width: 600px;
-    min-width: 280px;
-  }
-
-  /* ------------------------------------------- */
-  /* 섹션3 */
-  .sec3 {
-    width: 90%;
-    height: auto;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .sec3 > .sec_title {
-    margin-left: 0;
-  }
-
-  .room_wrap {
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    flex-shrink: 0;
-    gap: 10px;
-    margin: 35px 0;
-  }
-
-  .room_wrap::-webkit-scrollbar {
-    width: 0;
-  }
-
-  .room_con {
-    width: 100%;
-    max-width: 70%;
-    min-width: 286px;
-  }
-
-  .room_txt {
-    padding: 10px 0px;
-    padding-left: 0;
-  }
-
-  .room_con img {
-    width: 100%;
-    max-width: 70%;
-    min-width: 286px;
-  }
-
-  .tag_box {
-    gap: 1vw;
-  }
-
-  .tag {
-    width: fit-content;
-    min-width: 35px;
-    max-width: 100px;
-    padding: 9px 4px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tag > a {
-    text-align: center;
-    justify-self: center;
-    font-size: clamp(12px, 1.5vw, 1rem);
-  }
-
-  .user_nickname {
-    width: fit-content;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    gap: 0;
-  }
-
-  .user_nickname img {
-    display: none;
-  }
-
-  .user_nickname > p {
-    justify-self: left;
-  }
-
-  .more_btn {
-    width: 90px;
-    height: 40px;
-    border: none;
-    right: 0;
-    bottom: 0;
-    top: -10px;
-  }
-
-  .more_btn:hover {
-    bottom: 0;
-    border: none;
-  }
-
-  /* ------------------------------------------- */
-  /* 섹션4 */
-
-  .sec4 {
-    width: 100%;
-    height: auto;
-    margin-bottom: 90px;
-    overflow: hidden;
-  }
-
-  .rulebook div.rule_wrap {
-    width: 100%;
-    height: fit-content;
-    justify-self: center;
-    padding: 0;
-  }
-
-  .rulebook ul.rules {
-    width: 100%;
-    margin-left: 15px;
-    overflow: hidden;
-    overflow-x: auto;
-    display: flex;
-    gap: 20px;
-    justify-content: left;
-    -ms-overflow-style: none;
-  }
-
-  .rulebook ul.rules::-webkit-scrollbar {
-    display: none;
-  }
-
-  .rules > li {
-    width: 80px;
-    height: auto;
-    text-align: center;
-    line-height: 1.5;
-    white-space: nowrap;
-  }
-
-  .rule_wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .rule_wrap::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-
-  .rulebook_card {
-    border: 1px solid var(--primary-grey-color);
-    height: fit-content;
-  }
-
-  .rulebook_card:hover {
-    border: 1px solid var(--primary-grey-color);
-    top: 0;
-  }
-
-  .more_btn2 {
-    border: none;
-    top: -10px;
-  }
-
-  .more_btn2 > a {
-    color: var(--sub-grey-color);
-    font-size: var(--xs-font-size);
-    font-weight: 400;
-    transition: 0.5s;
-  }
-
-  .rule_more {
-    display: none;
-  }
-
-  .more_btn2 > a:hover {
-    color: var(--main-color);
-  }
-
-  @keyframes book1 {
-  }
-  @keyframes book2 {
-  }
-  @keyframes book3 {
-  }
-  @keyframes book4 {
-  }
-  @keyframes book5 {
-  }
-
-  /* footer */
-
-  footer > .con {
-    width: 95%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    padding: 30px 10px;
-    box-sizing: border-box;
-  }
-
-  .left_wrap {
-    width: fit-content;
-    height: 20%;
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .left_wrap > p {
-    margin-top: 85px;
-  }
-
-  .footer_nav > ul {
-    display: flex;
-    text-align: left;
-    gap: 10px;
-    height: 100px;
-    margin-bottom: 300px;
-  }
-
-  .search_box {
-    width: 280px;
-    margin: 0 auto;
-  }
-
-  .right_wrap {
-    width: fit-content;
-    height: 25%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .app_btn {
-    width: auto;
-    margin-top: 295px;
-    margin-right: auto;
-  }
-
-  .footer_txt {
-    width: auto;
-    padding-left: 0;
-    margin-bottom: 35px;
-    margin-right: auto;
-  }
-
-  .footer_txt > p {
-    width: fit-content;
-    text-align: left;
-  }
-}
-
-/* tablet -sm */
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-  /* 공통영역 */
-  .con {
-    width: 95%;
-  }
-
-  .sec_title {
-    width: fit-content;
-    height: fit-content;
-    font-size: var(--lg-font-size);
-    margin-left: 30px;
-    display: block;
-  }
-
-  .sec_title > p {
-    display: none;
-  }
-
-  /* 섹션1 */
-  .sec1 {
-    min-width: 480px;
-    height: auto;
-    position: relative;
-    margin-bottom: 80px;
-  }
-
-  /* 섹션1 타이틀 */
-  .sec1_title {
-    width: fit-content;
-    height: fit-content;
-    display: block;
-    justify-self: center;
-  }
-
-  .tab_menu > ul {
-    width: 90%;
-    margin-right: 0;
-    float: none;
-    justify-self: center;
-  }
-
-  /* 탭 메뉴 */
-  .tab_menu .list {
-    width: 90vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tab_menu .list li:last-child {
-    margin-bottom: 30px;
-  }
-
-  .cont_area {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .con2 {
-    margin-left: 0;
-  }
-
-  @keyframes card1 {
-  }
-  @keyframes card2 {
-  }
-  @keyframes card3 {
-  }
-
-  /* 섹션2 */
-  .sec2 {
-    width: 100%;
-    max-height: 760px;
-    overflow: hidden;
-  }
-
-  .tipmenu div.tip_wrap {
-    width: 100%;
-    height: auto;
-    justify-self: center;
-    padding: 0;
-  }
-
-  .tipmenu ul.tips {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-left: 15px;
-    gap: 10vw;
-    height: 5vh;
-    justify-content: left;
-  }
-
-  .tipmenu ul.tips::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  .tips > li {
-    height: 10px;
-    flex-shrink: 0;
-    width: fit-content;
-    text-align: left;
-  }
-
-  .tip_txt > p > br {
-    display: none;
-  }
-
-  .btn_con > button {
-    display: none;
-  }
-
-  .tipcon {
-    width: 100%;
-    height: auto;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-  }
-
-  .tip_txt {
-    width: 100%;
-    max-width: 500px;
-    min-width: 280px;
-    background-color: #f7f7f7;
-    border: 1px solid #f7f7f7;
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-  }
-
-  .tip_txt > h3 {
-    font-size: var(--md-font-size);
-    text-align: center;
-    margin-top: 8px;
-  }
-
-  .tip_txt > p {
-    font-size: clamp(16px, 2.5vw, 1rem);
-    word-wrap: break-word;
-    text-align: left;
-  }
-
-  .tip_img > img {
-    width: 100%;
-    max-width: 600px;
-    min-width: 280px;
-  }
-
-  /* sec3 */
-  .sec3 {
-    height: auto;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    flex-shrink: 0;
-    padding: 0 10px;
-    gap: 10px;
-  }
-
-  .sec3 > .sec_title {
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  /* footer */
-  footer > .con {
-    width: 95%;
-  }
-
-  .footer_nav > ul {
-    gap: 75px;
-  }
-
-  .left_wrap {
-    width: 100%;
-  }
-
-  .right_wrap {
-    width: 100%;
-    right: 0;
-  }
-
-  .search_box {
-    margin-left: 0;
-  }
-
-  .footer_txt {
-    bottom: 0;
-  }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1250px) {
-  .con {
-    width: 95%;
-  }
-
-  .sec_title {
-    width: fit-content;
-    height: fit-content;
-    font-size: var(--lg-font-size);
-    margin-left: 30px;
-    display: block;
-  }
-
-  .sec_title > p {
-    display: none;
-  }
-
   header {
+    width: 1600px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  header .con {
     width: 100%;
-  }
-
-  #gnb > ul > li {
-    width: fit-content;
-  }
-
-  /* 섹션1 */
-
-  .sec1 {
-    min-width: 641px;
-    height: auto;
-    position: relative;
-    margin-bottom: 80px;
-  }
-
-  .sec1_title {
-    width: fit-content;
-    height: fit-content;
-    display: block;
-    justify-self: center;
-  }
-
-  /* 탭 메뉴 */
-  .tab_menu .list {
-    width: 90vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tab_menu .list li:last-child {
-    margin-bottom: 30px;
-  }
-
-  .cont_area {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  /* sec2 */
-
-  .tipmenu ul.tips {
-    gap: 8vw;
-  }
-
-  /* sec3 */
-
-  .room_con {
-    width: 100%;
-    max-width: 70%;
-    min-width: 280px;
-  }
-
-  .room_con img {
-    width: 100%;
-    max-width: 70%;
-    min-width: 280px;
-  }
-
-  /* sec4 */
-  .more_btn2 {
-    margin-right: 20px;
-  }
-}
-
-@media screen and (min-width: 1023px) {
-  /* 공통 영역 */
-
-  .sec_title > p {
-    display: block;
   }
 
   /* sec1 */
-  .tab_menu .list {
-    width: 90vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0px;
-    box-sizing: border-box;
+
+  .sec1 .con {
+    width: 1500px;
   }
 
+  .tab_menu li {
+    width: 65px;
+  }
+
+  .cont_area {
+    width: 1325px;
+  }
+  
   /* sec2 */
-  .tipcon {
-    flex-direction: row;
-    gap: 25px;
-  }
 
-  .tipmenu ul.tips {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-left: 15px;
-    gap: 55px;
-    height: 5vh;
-    justify-content: left;
+  .sec2 .con {
+    width: 1540px;
   }
 
   /* sec3 */
 
   .sec3 {
-    width: 95%;
-    height: auto;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 60px;
   }
 
   .room_wrap {
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    flex-shrink: 0;
-    gap: 20px;
-    margin: 35px 10px;
-  }
-
-  .room_wrap::-webkit-scrollbar {
-    width: 0;
+    width: 1600px;
+    height: 450px;
+    padding: 0 30px;
   }
 
   .room_con {
-    width: 100%;
-    max-width: 80%;
-    min-width: 286px;
-  }
-
-  .room_txt {
-    padding: 10px 0px;
-    padding-left: 0;
-  }
-
-  .room_con img {
-    width: 100%;
-    max-width: 70%;
-    min-width: 286px;
-  }
-
-  .tag_box {
-    gap: 1vw;
-  }
-
-  .tag {
-    width: fit-content;
-    min-width: 35px;
-    max-width: 100px;
-    padding: 9px 4px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tag > a {
-    text-align: center;
-    justify-self: center;
-    font-size: clamp(11px, 1vw, 1rem);
+    width: 355px;
   }
 
   .more_btn {
-    width: 90px;
-    height: 40px;
-    border: none;
-    right: 0;
-    bottom: 0;
-    top: -10px;
+    bottom : 30px;
   }
 
   .more_btn:hover {
-    bottom: 0;
-    border: none;
+    bottom: 25px;
   }
 
   /* sec4 */
-  .sec4 {
-    width: 100%;
-    height: auto;
-    margin-bottom: 90px;
-    overflow: hidden;
+
+  .sec4 .con {
+    width: 1540px;
   }
 
-  .rulebook div.rule_wrap {
-    width: 100%;
-    height: fit-content;
-    justify-self: center;
-    padding: 0;
-  }
-
-  .rulebook ul.rules {
-    width: 100%;
-    display: block;
-    margin-left: 15px;
-    overflow: hidden;
-    display: flex;
-    gap: 15px;
-    justify-content: left;
-  }
-
-  .rules > li {
-    width: 70px;
-    height: auto;
-    text-align: center;
-    line-height: 1.5;
-    white-space: nowrap;
-  }
-
-  .rule_wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .rule_wrap::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-
-  .rulebook_card {
-    border: 1px solid var(--primary-grey-color);
-    height: fit-content;
-  }
-
-  .rulebook_card:hover {
-    border: 1px solid var(--primary-grey-color);
-    top: 0;
+  .rule_wrap > div.active {
+    width: 1500px;
   }
 
   .more_btn2 {
-    border: none;
-    top: -10px;
-    margin-right: 20px;
-  }
-
-  .more_btn2 > a {
-    color: var(--sub-grey-color);
-    font-size: var(--xs-font-size);
-    font-weight: 400;
-    transition: 0.5s;
-  }
-
-  .rule_more {
-    display: none;
-  }
-
-  .more_btn2 > a:hover {
-    color: var(--main-color);
-  }
-
-  @keyframes book1 {
-  }
-  @keyframes book2 {
-  }
-  @keyframes book3 {
-  }
-  @keyframes book4 {
-  }
-  @keyframes book5 {
-  }
-
-  /* footer */
-  footer > .con {
-    width: 95%;
-  }
-
-  .footer_nav > ul {
-    gap: 70px;
-  }
-
-  .left_wrap {
-    width: 50%;
-  }
-
-  .right_wrap {
-    width: 50%;
-    position: inherit;
-    right: 0;
-  }
-
-  .search_box {
-    margin-left: auto;
-  }
-
-  .app_btn {
-    position: inherit;
-    right: 0;
-    width: fit-content;
-    margin-left: auto;
-    margin-top: 170px;
+    right: 60px;
   }
 }
 
-@media screen and (min-width: 1249px) and (max-width: 1439px) {
+/* tablet lg */
+
+@media screen and (max-width: 1440px) {
   /* 공통영역 */
+  main,
+  section {
+    width: 1440px;
+  }
+
   .con {
-    width: 95%;
+    width: 1440px;
+  }
+
+  .sec_title {
+    width: 1440px;
+    padding-left: 50px;
+    margin: 0;
+  }
+
+  .sec1_title {
+    width: 1400px;
   }
 
   /* 헤더 */
   header {
+    width: 1440px;
+  }
+
+  /* sec1 */
+  .sec1 .con {
+    width: 1320px;
+  }
+
+  .cont_area {
+    width: 1000px;
+  }
+
+  /* sec2 */
+  .sec2 .con {
+    width: 1400px;
+  }
+  
+  .tipmenu div.tip_wrap {
+    width: 1400px;
+    padding: 30px 0;
+  }
+
+  .tip_txt {
+    width: 500px;
+  }
+
+  .tip_img > img {
+    width: 700px;
+  }
+
+  /* sec3 */
+
+  .room_wrap {
+    width: 1440px;
+    height: 450px;
+    gap: 25px;
+    justify-content: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+
+  .room_con {
+    width: 315px;
+  }
+
+  .more_btn {
+    right: 750px;
+  }
+
+  /* sec4 */
+  .sec4 .con {
+    width: 1400px;
+    margin: 0;
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+
+  .rule_wrap > div.active {
+    width: 1400px;
+    margin: 0;
+  }
+
+  .books {
+    gap: 30px;
+    margin: 10px 0;
+    margin-left: 55px;
+  }
+
+  .rulebook_card {
+    width: 220px;
+    height: auto;
+  }
+}
+
+/* tablet md */
+
+@media screen and (max-width: 1250px) {
+  /* 공통영역 */
+   main,
+   section {
+     width: 1250px;
+   }
+ 
+   .con {
+     width: 1250px;
+   }
+ 
+   .sec_title {
+     width: 1250px;
+     padding-left: 30px;
+     margin: 0;
+   }
+ 
+   .sec1_title {
+     width: fit-content;
+     height: fit-content;
+     margin-bottom: 20px;
+     padding-left: 0;
+   }
+
+   /* 헤더 */
+   header {
     width: 1250px;
   }
 
-  h1 {
-    width: 130px;
-  }
-
-  h1 > a > img:last-child {
-    display: none;
-  }
-
-  #gnb {
-    display: block;
-    width: fit-content;
-  }
-
-  #gnb > ul > li {
-    width: fit-content;
-  }
-
   /* sec1 */
-
-  .sec1_title {
-    width: fit-content;
-    height: fit-content;
-    display: block;
-    justify-self: center;
-  }
-
-  /* sec1 */
-  .tab_menu .list {
-    width: 90vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-    box-sizing: border-box;
-  }
-
-  /* sec2 */
-
-  .tipmenu div.tip_wrap {
-    width: fit-content;
-    height: auto;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .tip_img > img {
-    width: 100%;
-    max-width: 500px;
-    min-width: 280px;
-  }
-
-  .tipcon {
-    margin-left: 30px;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .tip_txt > p {
-    line-height: 24px;
-    font-size: clamp(16px, 1vw, 18px);
-  }
-
-  /* sec3 */
-  .sec3 {
-    width: 95%;
-    height: auto;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .room_wrap {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-    gap: 0px;
-    margin: 35px 10px;
-  }
-
-  .tag_box {
-    display: flex;
-    gap: 5px;
-  }
-
-  .tag {
-    width: fit-content;
-    min-width: 35px;
-    max-width: 100px;
-    padding: 9px 4px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* sec4 */
-  .more_btn2 {
-    margin-right: 30px;
-  }
-}
-
-/* pc */
-
-@media screen and (min-width: 1440px) {
-  /* 공통영역 */
-  .con {
-    width: 1440px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .sec_title {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  /* 헤더 */
-
-  /* h1 {
-    width: 130px;
-    height: 30px;
-    align-self: center;
-  }
-
-  header {
-    width: 100%;
-  }
-
-  header .con {
-    height: 100%;
-  }
-
-  #gnb {
-    width: fit-content;
-    height: 100%;
-  }
-
-  #gnb > ul {
-    gap: 80px;
-  }
-
-  #gnb > ul > li {
-    position: relative;
-  } */
-
-  /* sec1 */
-  .sec1 {
-    width: fit-content;
-    height: fit-content;
-    display: block;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-bottom: 90px;
-  }
-
-  .sec1_title {
-    width: 95%;
-    height: 80px;
-    font-size: var(--lg-font-size);
-    font-weight: 700;
-    margin-bottom: 20px;
+  .sec1 .con {
+    width: 1250px;
   }
 
   .tab_menu .list {
-    width: 190px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
-    flex-direction: column;
+    width: 1250px;
+    display: flex;
     justify-content: center;
+  }
+
+  .tab_menu > ul {
+    float: none;
   }
 
   .cont_area {
-    width: 1200px;
-    height: 450px;
-    padding-bottom: 100px;
-    box-sizing: border-box;
-    float: right;
-    position: relative;
-  }
-
-  .cont {
-    display: none; /* 기본적으로 모든 컨텐츠를 숨김 */
-  }
-
-  #tab1 {
-    display: block; /* 처음에는 tab1만 보이도록 설정 */
-  }
-
-  .card_wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-  }
-
-  .con2 {
-    width: 300px;
-    height: 450px;
-    background-color: #f8f8f8;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0;
-    margin-left: 60px;
-    box-sizing: border-box;
-  }
-
-  .card_wrap > .con2:first-child {
-    margin-left: 0;
-  }
-
-  .con2 > h3 {
-    font-size: var(--md-font-size);
-    font-weight: 600;
-    margin-bottom: 60px;
-  }
-
-  .con2 > img {
-    width: 160px;
-    height: 160px;
-    margin-bottom: 60px;
-  }
-
-  .con2 > span {
-    font-size: var(--xs-font-size);
-    text-align: center;
+    width: 1250px;
+    margin-left: 50px;
+    float: none;
   }
 
   /* sec2 */
-  .sec2 {
-    width: fit-content;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-bottom: 90px;
+  .sec2 .con {
+    width: 1250px;
+    margin: 0 30px;
   }
 
   .tipmenu ul.tips {
-    overflow-x: hidden;
-    margin-top: 30px;
-    margin-left: 40px;
-    gap: 70px;
+    gap: 60px;
   }
-
+  
   .tipmenu div.tip_wrap {
-    justify-self: center;
-  }
-
-  .tipcon {
-    gap: 45px;
+    width: 1180px;
+    padding: 0;
   }
 
   .tip_txt {
-    width: 580px;
-  }
-
-  .tip_txt > h3 {
-    font-size: var(--xl-font-size);
-    font-weight: 700;
+    width: 480px;
+    margin-left: 20px;
   }
 
   .tip_txt > p {
-    line-height: 24px;
-    font-size: var(--sm-font-size);
-    word-wrap: normal;
-  }
-
-  .tip_txt > p > span {
-    color: var(--main-color);
-  }
-
-  .tip_txt > p > br {
-    display: block;
+    font-size: 17px;
   }
 
   .tip_img > img {
-    width: 100%;
-    max-width: 670px;
-    min-width: 400px;
+    width: 640px;
   }
 
   /* sec3 */
   .sec3 {
-    width: 1440px;
-    margin: 0 auto;
+    width: 1250px;
+    position: relative;
     overflow: hidden;
-    margin-bottom: 90px;
-  }
-
-  .room_con {
-    width: 100%;
-    max-width: 100%;
-    min-width: none;
   }
 
   .room_wrap {
     width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
+    overflow-x: auto;
+    flex-shrink: 0;
     gap: 10px;
+
   }
 
-  .room_con img {
-    width: 315px;
-    margin: 0 auto;
-    max-width: 100%;
-    min-width: none;
+  .room_wrap::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .room_con {
+    width: 100%;
+    min-width: 315px;
   }
 
   .room_txt {
-    padding: 10px;
-  }
-
-  .tag_box {
-    width: 100%;
-    gap: 7px;
-  }
-
-  .tag {
-    width: fit-content;
-    height: 25px;
-    padding: 8px 8px;
-    justify-content: left;
-  }
-
-  .tag > a {
-    font-size: clamp(10px, 1.5vw, 12px);
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  /* 공통 영역
-  .con {
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .sec_title {
-    width: 1600px;
-    margin: 0 auto;
-    padding-left: 30px;
-    box-sizing: border-box;
-  }
-
-  /* 헤더 */
-  /* header {
-    width: 100%;
-  }
-
-  header .con {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  h1 {
-    width: 130px; 
-    height: 30px;
-    align-self: center;
-  } */
-
-  /* sec1 */
-
-  /* .sec1_title {
-    width: 1600px;
-    padding-left: 30px;
-    box-sizing: border-box;
-  }
-
-  .tab_menu .list {
-    width: fit-content;
-    justify-content: center;
-    margin-left: 0;
-  } */
-
-  /* sec3 */
-
-  /* .sec3 {
-    width: 1600px;
-    height: fit-content;
-    padding-left: 30px;
-    box-sizing: border-box;
-  }
-
-  .sec3 .sec_title {
+    padding: 10px 0;
     padding-left: 0;
   }
 
-  .room_wrap {
-    width: 100%;
-    height: 506px;
-    display: flex;
-    align-items: baseline;
-    gap: 40px;
-  }
-
-  .room_con {
-    width: 350px;
-  }
-
-  .room_con img {
-    width: 99%;
-    height: 200px;
-    border-radius: 6px;
-  }
-
-  .room_txt {
-    width: 100%;
-    gap: 18px;
-  }
-
   .tag_box {
-    width: 100%;
-    gap: 8px;
+    gap: 5px;
   }
 
   .more_btn {
-    width: 194px;
-    height: 55px;
-    position: absolute;
-    right: 700px;
-    top: 450px;
-    border: 1px solid var(--sub-grey-color);
-    border-radius: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.5s;
-  } */
-
-  /* hover 효과 -sec3 */
-
-  /* .more_btn:hover {
-    top: 455px;
-    border: 1px solid var(--main-color);
-  }
-
-  .more_btn:hover a {
-    color: var(--main-color);
-    top: 455px;
-  } */
-
-  /* sec4 */
-  /* .more_btn2 {
     width: 90px;
     height: 40px;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    border: 1px solid var(--main-color);
-    border-radius: 20px;
+    border: none;
+    right: 30px;
+    bottom: 0;
+    top: 0px;
   }
 
-  .more_btn2 > a {
-    display: block;
-    font-family: "inter", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 40px;
-    color: var(--main-color);
+  .more_btn:hover {
+    bottom: 0;
+    border: none;
+  }
+
+  /* sec4 */
+  .sec4 {
+    width: 1250px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sec4 .con {
+    width: 1250px;
+    padding-left: 30px;
+  }
+
+  .rulebook div.rule_wrap {
+    width: 1250px;
+  }
+
+  .books {
+    width: 1250px;
+    margin: 0;
+  }
+
+  .rule_wrap {
+    overflow-x: auto;
+  }
+
+  .rule_wrap::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .rulebook_card {
+    border: 1px solid var(--sub-grey-color);
   }
 
   .rule_more {
-    display: block;
+    border: 1px solid var(--sub-grey-color);
   }
 
   .rule_more > a {
-    display: block;
+    color: var(--sub-grey-color);
   }
 
   .rulebook_card:hover {
-    border: 1px solid var(--main-color);
-    top: -10px;
+    top: 0
   }
 
-  .rulebook_card .rule_more:hover {
-    border: 1px solid var(--main-color);
+  .rule_more:hover {
+    border: 1px solid var(--sub-grey-color);
   }
 
-  .rulebook_card .rule_more:hover > a {
-    color: var(--main-color);
+ .rule_more:hover > a {
+    color: var(--sub-grey-color);
   }
+}
 
-  .book1 {
-    position: relative;
-    animation: book1 1s ease 1 alternate forwards;
-  }
+/* tablet sm */
 
-  @keyframes book1 {
-    from {
-      opacity: 0;
-      transform: translateX(100%);
-    }
+@media screen and (max-width: 1025px) {
+  
+}
 
-    to {
-      transform: translateX(0%);
-    }
-  }
+/* mobile */
 
-  .book2 {
-    position: relative;
-    animation: book2 1.5s ease 1 alternate forwards;
-  }
+@media screen and (max-width: 768px) {
+  
+}
 
-  @keyframes book2 {
-    from {
-      transform: translateX(100%);
-    }
+@media screen and (max-width: 480px) {
+  
+}
 
-    to {
-      transform: translateX(0%);
-    }
-  }
-
-  .book3 {
-    position: relative;
-    animation: book3 2s ease 1 alternate forwards;
-  }
-
-  @keyframes book3 {
-    from {
-      transform: translateX(100%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
-  }
-
-  .book4 {
-    position: relative;
-    animation: book4 2.5s ease 1 alternate forwards;
-  }
-
-  @keyframes book4 {
-    from {
-      transform: translateX(100%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
-  }
-
-  .book5 {
-    position: relative;
-    animation: book5 3s ease 1 alternate forwards;
-  }
-
-  @keyframes book5 {
-    from {
-      transform: translateX(100%);
-    }
-
-    to {
-      transform: translateX(0%);
-    } 
-  } */
+@media screen and (max-width: 320px) {
+  
 }
