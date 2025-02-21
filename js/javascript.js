@@ -76,33 +76,29 @@ const swiper1 = new Swiper("#tab1", {
   spaceBetween: 10,
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      slidesOffsetBefore: 260,
-      slidesOffsetAfter: -260,
+      slidesPerView: "auto",
+      slidesOffsetBefore: 315,
+      slidesOffsetAfter: -295,
     },
 
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -210,
-    },
-
-    641: {
-      slidesPerView: "auto",
-      slidesOffsetBefore: 280,
-      slidesOffsetAfter: -40,
+      slidesOffsetAfter: -140,
     },
 
     768: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 280,
-      slidesOffsetAfter: 10,
+      slidesOffsetBefore: 310,
+      slidesOffsetAfter: 150,
     },
 
-    1024: {
+    1025: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 270,
-      slidesOffsetAfter: 210,
+      slidesOffsetBefore: 0,
+      slidesOffsetAfter: 0,
+      resistance: false,
+      allowTouchMove: false,
     },
 
     1250: {
@@ -121,33 +117,29 @@ const swiper2 = new Swiper("#tab2", {
   spaceBetween: 10,
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      slidesOffsetBefore: 260,
-      slidesOffsetAfter: -260,
+      slidesPerView: "auto",
+      slidesOffsetBefore: 315,
+      slidesOffsetAfter: -295,
     },
 
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -210,
-    },
-
-    641: {
-      slidesPerView: "auto",
-      slidesOffsetBefore: 280,
-      slidesOffsetAfter: -40,
+      slidesOffsetAfter: -140,
     },
 
     768: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 280,
-      slidesOffsetAfter: 10,
+      slidesOffsetBefore: 310,
+      slidesOffsetAfter: 150,
     },
 
-    1024: {
+    1025: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 270,
-      slidesOffsetAfter: 210,
+      slidesOffsetBefore: 0,
+      slidesOffsetAfter: 0,
+      resistance: false,
+      allowTouchMove: false,
     },
 
     1250: {
@@ -166,33 +158,29 @@ const swiper3 = new Swiper("#tab3", {
   spaceBetween: 10,
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      slidesOffsetBefore: 260,
-      slidesOffsetAfter: -260,
+      slidesPerView: "auto",
+      slidesOffsetBefore: 315,
+      slidesOffsetAfter: -295,
     },
 
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 310,
-      slidesOffsetAfter: -210,
-    },
-
-    641: {
-      slidesPerView: "auto",
-      slidesOffsetBefore: 280,
-      slidesOffsetAfter: -40,
+      slidesOffsetAfter: -140,
     },
 
     768: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 280,
-      slidesOffsetAfter: 10,
+      slidesOffsetBefore: 310,
+      slidesOffsetAfter: 150,
     },
 
-    1024: {
+    1025: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 270,
-      slidesOffsetAfter: 210,
+      slidesOffsetBefore: 0,
+      slidesOffsetAfter: 0,
+      resistance: false,
+      allowTouchMove: false,
     },
 
     1250: {

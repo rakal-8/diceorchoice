@@ -40,6 +40,10 @@
     width: 100%;
   }
 
+  h1 {
+    height: auto;
+  }
+
   /* sec1 */
 
   .sec1 .con {
@@ -53,7 +57,7 @@
   .cont_area {
     width: 1325px;
   }
-  
+
   /* sec2 */
 
   .sec2 .con {
@@ -78,7 +82,7 @@
   }
 
   .more_btn {
-    bottom : 30px;
+    bottom: 30px;
   }
 
   .more_btn:hover {
@@ -141,7 +145,7 @@
   .sec2 .con {
     width: 1400px;
   }
-  
+
   .tipmenu div.tip_wrap {
     width: 1400px;
     padding: 30px 0;
@@ -203,30 +207,30 @@
 
 @media screen and (max-width: 1250px) {
   /* 공통영역 */
-   main,
-   section {
-     width: 1250px;
-   }
- 
-   .con {
-     width: 1250px;
-   }
- 
-   .sec_title {
-     width: 1250px;
-     padding-left: 30px;
-     margin: 0;
-   }
- 
-   .sec1_title {
-     width: fit-content;
-     height: fit-content;
-     margin-bottom: 20px;
-     padding-left: 0;
-   }
+  main,
+  section {
+    width: 1250px;
+  }
 
-   /* 헤더 */
-   header {
+  .con {
+    width: 1250px;
+  }
+
+  .sec_title {
+    width: 1250px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  .sec1_title {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+
+  /* 헤더 */
+  header {
     width: 1250px;
   }
 
@@ -260,7 +264,7 @@
   .tipmenu ul.tips {
     gap: 60px;
   }
-  
+
   .tipmenu div.tip_wrap {
     width: 1180px;
     padding: 0;
@@ -291,7 +295,6 @@
     overflow-x: auto;
     flex-shrink: 0;
     gap: 10px;
-
   }
 
   .room_wrap::-webkit-scrollbar {
@@ -369,14 +372,14 @@
   }
 
   .rulebook_card:hover {
-    top: 0
+    top: 0;
   }
 
   .rule_more:hover {
     border: 1px solid var(--sub-grey-color);
   }
 
- .rule_more:hover > a {
+  .rule_more:hover > a {
     color: var(--sub-grey-color);
   }
 }
@@ -384,19 +387,736 @@
 /* tablet sm */
 
 @media screen and (max-width: 1025px) {
-  
+  /* 공통영역 */
+  main,
+  section {
+    width: 1025px;
+  }
+
+  .con {
+    width: 1025px;
+  }
+
+  .sec_title {
+    width: 1025px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  .sec1_title {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+
+  /* 헤더 */
+  header {
+    width: 1025px;
+  }
+
+  #gnb > ul {
+    gap: 60px;
+  }
+
+  /* sec1 */
+  .sec1 .con {
+    width: 1025px;
+  }
+
+  .tab_menu .list {
+    width: 1025px;
+  }
+
+  .cont_area {
+    width: 1025px;
+    margin-left: 0px;
+  }
+
+  .con2 {
+    margin-left: 0;
+  }
+
+  /* sec2 */
+  .sec2 {
+    margin-bottom: 0px;
+  }
+
+  .sec2 .con {
+    width: 1025px;
+    margin: 0 30px;
+  }
+
+  .tipmenu ul.tips {
+    gap: 40px;
+  }
+
+  .tipmenu div.tip_wrap {
+    width: 950px;
+  }
+
+  .tip_txt {
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  .tip_txt > p {
+    font-size: clamp(18px, 2.5vw, 1rem);
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  .tip_txt > p > br {
+    display: none;
+  }
+
+  .tip_img > img {
+    width: 480px;
+  }
+
+  /* sec3 */
+  .sec3 {
+    width: 1025px;
+  }
+
+  .room_wrap {
+    gap: 40px;
+  }
+
+  .room_con {
+    min-width: 370px;
+    height: auto;
+  }
+
+  /* sec4 */
+  .sec4 {
+    width: 1025px;
+  }
+
+  .sec4 .con {
+    width: 1025px;
+  }
+
+  .rulebook div.rule_wrap {
+    width: 1025px;
+  }
+
+  .rule_wrap > div.active {
+    width: 1320px;
+  }
+
+  .books {
+    width: 950px;
+    justify-content: inherit;
+  }
+
+  .rulebook_card {
+    flex-shrink: 0;
+  }
+
+  /* footer */
+
+  footer {
+    padding-bottom: 0px;
+  }
+
+  footer > .con {
+    width: 1025px;
+    padding: 60px 30px 0 30px;
+  }
+
+  .footer_nav > ul {
+    gap: 70px;
+  }
+
+  .app_btn {
+    margin-top: 150px;
+  }
 }
 
 /* mobile */
 
 @media screen and (max-width: 768px) {
-  
+  /* 공통영역 */
+  main,
+  section {
+    width: 768px;
+  }
+
+  .con {
+    width: 768px;
+  }
+
+  .sec_title {
+    width: 768px;
+  }
+
+  /* 헤더 */
+
+  header {
+    width: 768px;
+  }
+
+  h1 {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  h1 > a > img {
+    display: none;
+  }
+
+  h1 > a > img:last-child {
+    display: block;
+    width: fit-content;
+    height: 40px;
+    filter: invert(38%) sepia(44%) saturate(764%) hue-rotate(212deg)
+      brightness(88%) contrast(90%);
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  /* 아이콘 */
+  .icons > a {
+    display: none;
+  }
+
+  .icons > a:last-child {
+    display: block;
+  }
+
+  /* sec1 */
+  .sec1 .con {
+    width: 768px;
+  }
+
+  .tab_menu .list {
+    width: 768px;
+  }
+
+  .cont_area {
+    width: 768px;
+  }
+
+  @keyframes card1 {
+  }
+  @keyframes card2 {
+  }
+  @keyframes card3 {
+  }
+
+  /* sec2 */
+
+  .sec2 {
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+
+  .sec2 .con {
+    width: 768px;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+
+  .tipmenu ul.tips {
+    gap: 20px;
+  }
+
+  .tipmenu div.tip_wrap {
+    width: 698px;
+    height: fit-content;
+  }
+
+  .tipcon {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .tip_txt {
+    width: 530px;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+
+  .tip_txt > h3 {
+    font-size: var(--md-font-size);
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .tip_txt > p {
+    font-size: clamp(14px, 2.5vw, 1rem);
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  .tip_img > img {
+    min-width: 260px;
+  }
+
+  .btn_con > button {
+    display: none;
+  }
+
+  /* sec3 */
+  .sec3 {
+    width: 768px;
+  }
+
+  .room_wrap {
+    gap: 40px;
+  }
+
+  .room_con {
+    min-width: 315px;
+    height: auto;
+  }
+
+  /* sec4 */
+  .sec4 {
+    width: 768px;
+  }
+
+  .sec4 .con {
+    width: 768px;
+  }
+
+  .rulebook div.rule_wrap {
+    width: 768px;
+  }
+
+  .books {
+    gap: 20px;
+  }
+
+  .more_btn2 {
+    border: none;
+    top: -10px;
+    right: 30px;
+  }
+
+  .more_btn2 > a {
+    color: var(--sub-grey-color);
+    font-size: var(--xs-font-size);
+    font-weight: 400;
+    transition: 0.5s;
+  }
+
+  .rule_more {
+    display: none;
+  }
+
+  .more_btn2 > a:hover {
+    color: var(--main-color);
+  }
+
+  /* footer */
+
+  footer > .con {
+    width: 768px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    box-sizing: border-box;
+  }
+
+  .left_wrap {
+    width: 95%;
+    height: 20%;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .left_wrap > p {
+    margin-top: 0;
+  }
+
+  .footer_nav > ul {
+    width: auto;
+    display: flex;
+    text-align: left;
+    gap: 10%;
+    height: 100px;
+    margin-bottom: 200px;
+  }
+
+  .search_box {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .right_wrap {
+    width: fit-content;
+    height: 25%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app_btn {
+    width: auto;
+    margin-top: 215px;
+    margin-right: auto;
+  }
+
+  .footer_txt {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 35px;
+    margin-right: auto;
+  }
+
+  .footer_txt > p {
+    width: fit-content;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  /* 공통영역 */
+  main,
+  section {
+    width: 480px;
+  }
+
+  .con {
+    width: 480px;
+  }
+
+  .sec_title {
+    width: 480px;
+  }
+
+  /* 헤더 */
+
+  header {
+    width: 480px;
+  }
+
+  h1 {
+    margin-left: 190px;
+  }
+
+  /* 메인 비주얼 */
+  .main_visual {
+    margin-bottom: 30px;
+  }
+
+  /* sec1 */
+  .sec1 .con {
+    width: 480px;
+  }
+
+  .tab_menu .list {
+    width: 480px;
+  }
+
+  .cont_area {
+    width: 480px;
+  }
+
+  /* sec2 */
+
+  .sec2 {
+    width: 100%;
+    max-height: 760px;
+    overflow: hidden;
+  }
+
+  .tipmenu div.tip_wrap {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    padding: 0;
+  }
+
+  .tipmenu ul.tips {
+    width: 400px;
+    overflow-x: auto;
+    gap: 10vw;
+    justify-content: left;
+  }
+
+  .tipmenu ul.tips::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .tips > li {
+    height: 10px;
+    flex-shrink: 0;
+    width: fit-content;
+    text-align: left;
+  }
+
+  .tipcon {
+    width: 430px;
+    gap: 25px;
+  }
+
+  .tip_txt {
+    width: 420px;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .tip_txt > h3 {
+    font-size: var(--md-font-size);
+    margin-top: 8px;
+  }
+
+  .tip_txt > p {
+    font-size: clamp(17px, 2.5vw, 1rem);
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  .tip_img > img {
+    max-width: 420px;
+  }
+
+  /* sec3 */
+  .sec3 {
+    width: 480px;
+  }
+
+  .room_wrap {
+    padding: 0px 60px;
+    gap: 60px;
+  }
+
+  .room_con {
+    min-width: 370px;
+    height: auto;
+  }
+
+  /* sec4 */
+
+  .sec4 {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .rulebook div.rule_wrap {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    padding: 0;
+  }
+
+  .rulebook ul.rules {
+    width: 400px;
+    overflow-x: auto;
+    gap: 10vw;
+    justify-content: left;
+  }
+
+  .rulebook ul.rules::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .rules > li {
+    width: 80px;
+    height: auto;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .more_btn2 {
+    right: 320px;
+  }
+
+  .rulebook_card {
+    width: 240px;
+    height: 390px;
+  }
+
+  .rulebook_card:hover {
+    border: 1px solid var(--sub-grey-color);
+  }
+
+  @keyframes book1 {
+  }
+  @keyframes book2 {
+  }
+  @keyframes book3 {
+  }
+  @keyframes book4 {
+  }
+  @keyframes book5 {
+  }
+
+  /* footer */
+  footer > .con {
+    width: 480px;
+  }
+
+  .search_box {
+    width: 410px;
+    height: 50px;
+  }
+
+  .search_box > button {
+    top: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  
+  /* 공통영역 */
+  main,
+  section {
+    width: 320px;
+  }
+
+  .con {
+    width: 320px;
+  }
+
+  .sec_title {
+    width: 320px;
+    height: 40px;
+  }
+
+  .sec_title > p {
+    display: none;
+  }
+
+  /* 헤더 */
+
+  header {
+    width: 320px;
+  }
+
+  h1 {
+    margin-left: 101px;
+  }
+
+  /* 퀵메뉴 */
+
+  .quickmenu {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .quickmenu ul > li {
+    margin: 0 auto;
+  }
+
+  .quickmenu ul a {
+    width: 60px;
+  }
+
+  .quickmenu ul a img {
+    width: 28px;
+    height: 28px;
+    padding: 10px;
+  }
+
+  .quickmenu ul a span {
+    width: 58px;
+    font-size: 15px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+  }
+
+  /* sec1 */
+  .sec1 .con {
+    width: 320px;
+  }
+
+  .tab_menu .list {
+    width: 320px;
+  }
+
+  .cont_area {
+    width: 320px;
+  }
+
+  /* sec2 */
+
+  .tipcon {
+    width: 275px;
+  }
+
+  .tip_txt {
+    width: 265px;
+  }
+
+  .tip_img > img {
+    max-width: 285px;
+  }
+
+  .tip_txt > p {
+    font-size: clamp(17px, 1vw, 2vw);
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  /* sec3 */
+
+  .sec3 {
+    width: 320px;
+    padding-bottom: 30px;
+  }
+
+  .room_wrap {
+    padding: 0px 10px;
+    gap: 10px;
+    height: 380px;
+  }
+
+  .room_con {
+    min-width: 300px;
+    height: auto;
+  }
+
+  .more_btn {
+    top: -15px;
+  }
+
+  /* sec4 */
+
+  .sec4 {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .rulebook div.rule_wrap {
+    width: 300px;
+    height: auto;
+    justify-self: inherit;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .rulebook_card {
+    width: 240px;
+    height: 390px;
+  }
+
+  .more_btn2 {
+    right: 30px;
+  }
+
+  /* footer */
+  footer > .con {
+    width: 320px;
+  }
+
+  .search_box {
+    width: 270px;
+    height: 50px;
+  }
 }
