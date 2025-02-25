@@ -81,12 +81,11 @@
           </div>
         </div>
       </header>
-
       <main>
         <!-- 메인 비주얼 -->
-        <div class="new_visual">
-          <div class="img_con">
-            <div class="slide1">
+        <div class="new_visual swiper mySwiper">
+          <div class="img_con swiper-wrapper">
+            <div class="slide1 swiper-slide"> 
               <div class="newrule_img">
                 <img
                   src="../img/sub/new_con_img.png"
@@ -96,7 +95,7 @@
                 <a href="#">더 알아보기</a>
               </div>
             </div>
-            <div class="slide2">
+            <div class="slide2 swiper-slide"> 
               <div class="newrule_img">
                 <img
                   src="../img/sub/new_con_img.png"
@@ -106,7 +105,7 @@
                 <a href="#">더 알아보기</a>
               </div>
             </div>
-            <div class="slide2">
+            <div class="slide3 swiper-slide"> 
               <div class="newrule_img">
                 <img
                   src="../img/sub/new_con_img.png"
@@ -117,6 +116,9 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
         <!-- 첫번째 섹션 -->
         <section class="sec1">
@@ -529,8 +531,7 @@
       </footer>
     </div>
     <!-- js연결 -->
-    <script src="../js/javascript.js"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/sub_javascript.js"></script>
   </body>
 </html>
