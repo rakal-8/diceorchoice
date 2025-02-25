@@ -326,3 +326,6 @@ slider4.addEventListener("mousemove", (e) => {
   const walk = x - startX4;
   slider4.scrollLeft = scrollLeft4 - walk;
 });
+
+//--------------------------------------------------//
+//서브페이지 js//
