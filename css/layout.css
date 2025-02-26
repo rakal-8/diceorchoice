@@ -620,19 +620,32 @@ section {
   width: 370px;
   height: 320px;
   border-radius: 6px 6px 0 0;
+  overflow: hidden;
 }
 
-.room_con img {
+.room_img {
   width: 100%;
   height: 200px;
   border-radius: 6px;
+  overflow: hidden;
+}
+
+.room_img > a {
+  height: 200px;
+}
+
+.room_img img {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .room_txt {
   width: 100%;
   height: 120px;
-  padding: 10px;
-  padding-left: 16px;
+  padding: 10px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -661,6 +674,7 @@ section {
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
+  opacity: 0.7;
 }
 
 .tag > a {
@@ -707,7 +721,7 @@ section {
   position: absolute;
   right: 700px;
   bottom: -30px;
-  border: 1px solid var(--sub-grey-color);
+  border: 1px solid var(--sub-title-color);
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
@@ -718,11 +732,15 @@ section {
   display: block;
   border-radius: 20px;
   line-height: 55px;
-  color: var(--sub-grey-color);
+  color: var(--sub-title-color);
   transition: 0.5s;
 }
 
 /* hover 효과 -sec3 */
+
+.room_img > a:hover > img {
+  transform: scale(1.1);
+}
 
 .more_btn:hover {
   bottom: -35px;
@@ -823,7 +841,7 @@ section {
   height: 427px;
   margin-top: 10px;
   overflow: hidden;
-  border: 1px solid var(--primary-grey-color);
+  border: 1px solid var(--sub-title-color);
   border-radius: 10px;
   position: relative;
   top: 0;
@@ -880,7 +898,7 @@ section {
   height: 40px;
   padding: 11px 21px;
   box-sizing: border-box;
-  border: 1px solid var(--primary-grey-color);
+  border: 1px solid var(--sub-title-color);
   border-radius: 20px;
   transition: 0.4s;
   cursor: pointer;
@@ -892,7 +910,7 @@ section {
   display: block;
   text-align: center;
   font-size: 14px;
-  color: var(--primary-grey-color);
+  color: var(--sub-title-color);
   transition: 0.4s;
 }
 
@@ -1106,6 +1124,8 @@ footer > .con {
 }
 
 .footer_txt > p {
+  font-size: 15px;
+  line-height: 18px;
   text-align: right;
   color: rgba(255, 255, 255, 0.5);
 }

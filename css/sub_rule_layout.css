@@ -230,7 +230,9 @@ section {
   align-items: center;
 }
 
-.slide1, .slide2, .slide3 {
+.slide1,
+.slide2,
+.slide3 {
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -268,7 +270,8 @@ section {
   transition: 0.4s;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   color: var(--primary-grey-color);
 }
 
@@ -333,6 +336,8 @@ section {
 }
 
 .newrule_card .newrule_txtcon > p {
+  padding: 0 15px;
+  box-sizing: border-box;
   font-size: 13px;
   color: var(--sub-grey-color);
   text-align: center;
@@ -347,7 +352,7 @@ section {
   height: 40px;
   padding: 11px 21px;
   box-sizing: border-box;
-  border: 1px solid var(--primary-grey-color);
+  border: 1px solid var(--sub-grey-color);
   border-radius: 20px;
   transition: 0.4s;
   cursor: pointer;
@@ -360,7 +365,7 @@ section {
   display: block;
   text-align: center;
   font-size: 14px;
-  color: var(--primary-grey-color);
+  color: var(--sub-grey-color);
   transition: 0.4s;
 }
 
@@ -461,7 +466,7 @@ section {
 .numbertxt_wrap .info_con > p {
   font-size: 16px;
   font-weight: 300;
-  color: var(--sub-grey-color);
+  color: var(--sub-title-color);
   margin-bottom: 15px;
   overflow: hidden;
   white-space: nowrap;
@@ -474,7 +479,7 @@ section {
   height: 45px;
   padding: 15px 21px;
   box-sizing: border-box;
-  border: 1px solid var(--primary-grey-color);
+  border: 1px solid var(--sub-title-color);
   border-radius: 20px;
   transition: 0.4s;
   cursor: pointer;
@@ -486,7 +491,7 @@ section {
   display: block;
   text-align: center;
   font-size: 14px;
-  color: var(--primary-grey-color);
+  color: var(--sub-title-color);
   transition: 0.4s;
 }
 
@@ -527,6 +532,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  overflow: hidden;
 }
 
 .banner_con > p {
@@ -542,9 +548,8 @@ section {
 }
 
 .funding_banner img {
-  position: absolute;
+  overflow: hidden;
   top: 0;
-  z-index: 2;
 }
 
 .bg1 {
@@ -553,7 +558,7 @@ section {
   background-color: #ff7979;
   border-radius: 10px;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 80px;
 }
 
@@ -563,7 +568,7 @@ section {
   background-color: #e7e7e7;
   border-radius: 10px;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 80px;
 }
 
@@ -573,13 +578,11 @@ section {
   background-color: #6956b2;
   border-radius: 10px;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 80px;
 }
 
 .funding_wrap .funding_banner:hover img {
-  position: absolute;
-  top: 0px;
   animation: imgup 0.8s ease 0s 1 alternate forwards;
 }
 
@@ -665,7 +668,7 @@ section {
   height: 40px;
   padding: 11px 21px;
   box-sizing: border-box;
-  border: 1px solid var(--primary-grey-color);
+  border: 1px solid var(--sub-grey-color);
   border-radius: 20px;
   transition: 0.4s;
   cursor: pointer;
@@ -678,7 +681,7 @@ section {
   display: block;
   text-align: center;
   font-size: 14px;
-  color: var(--primary-grey-color);
+  color: var(--sub-grey-color);
   transition: 0.4s;
 }
 
