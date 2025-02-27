@@ -12,9 +12,14 @@ const tabList = document.querySelectorAll(".tab_menu .list li");
 const contents = document.querySelectorAll(".tab_menu .cont_area .cont");
 let activeCont = ""; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
 
+let isTransitioning = false; //추가
+
 for (let i = 0; i < tabList.length; i++) {
   tabList[i].querySelector(".btn").addEventListener("click", function (e) {
+    if (isTransitioning) return; //추가
+
     e.preventDefault();
+
     for (let j = 0; j < tabList.length; j++) {
       // 나머지 버튼 클래스 제거
       tabList[j].classList.remove("is_on");
