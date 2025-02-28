@@ -424,9 +424,14 @@ section {
 }
 
 .room_txt > h3 {
+  width: 100%;
+  overflow: hidden;
   font-family: "inter", sans-serif;
   font-size: var(--sm-font-size);
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .user_nickname {
@@ -540,9 +545,14 @@ section {
 }
 
 .post_txt > h3 {
+  width: 100%;
+  overflow: hidden;
   font-family: "inter", sans-serif;
   font-size: var(--sm-font-size);
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .swiper-pagination-bullet-active {
